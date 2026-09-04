@@ -42,8 +42,8 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
     </nav>
 
     <a href={`${prefix}/`} class="relative inline-block leading-[0.8] md:justify-self-center" aria-label="Anne Leblanc — Accueil">
-      <!-- Liserés jaunes décoratifs — extraits du tracé au feutre d'Anne (cf. réf. header), positionnés en % autour des deux lignes du logo. Cachés en dessous de xl (1280px) :
-           avec 3 onglets dans le nav de gauche + Bio à droite, ils empiéteraient sur le trait tant que le header n'est pas au plateau max-w-7xl (cf. correction-2-nav-devis-portrait). -->
+      <!-- Liserés jaunes décoratifs — extraits du tracé au feutre d'Anne (cf. réf. header), positionnés en % autour des deux lignes du logo. Resserrés et cachés en dessous de 1152px :
+           avec 3 onglets dans le nav de gauche + Bio à droite, ils empiéteraient sur le trait à des largeurs plus étroites (cf. correction-2-nav-devis-portrait, puis correction-liseret-visible-largeur-normale). -->
       <Image
         src={liseretAnne}
         alt=""
@@ -51,7 +51,7 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
         loading="eager"
         width={218}
         height={101}
-        class="pointer-events-none absolute left-[-62%] top-[3%] z-0 hidden h-auto w-[82%] max-w-none xl:block"
+        class="pointer-events-none absolute left-[-46%] top-[3%] z-0 hidden h-auto w-[82%] max-w-none min-[1152px]:block"
       />
       <Image
         src={liseretLeblanc}
@@ -60,7 +60,7 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
         loading="eager"
         width={344}
         height={148}
-        class="pointer-events-none absolute left-[61%] top-[-18%] z-0 hidden h-auto w-[129%] max-w-none xl:block"
+        class="pointer-events-none absolute left-[61%] top-[-18%] z-0 hidden h-auto w-[105%] max-w-none min-[1152px]:block"
       />
       <span
         class="relative z-10 inline-block font-logo text-4xl text-violet-600 sm:text-5xl md:text-6xl"
