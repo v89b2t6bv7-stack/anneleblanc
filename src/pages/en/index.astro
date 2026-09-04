@@ -1,0 +1,231 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ActivityCarousel from '../../components/ActivityCarousel.astro';
+import GridCell from '../../components/GridCell.astro';
+import InstagramDivider from '../../components/InstagramDivider.astro';
+import PencilStroke from '../../components/PencilStroke.astro';
+import { useTranslations, getCurrentLang } from '../../i18n';
+
+import dessinDirectAction from '../../assets/images/accueil/activites/dessin-direct-anne-en-action.jpg';
+import dessinDirectResultat from '../../assets/images/accueil/activites/dessin-direct-jean-philippe-resultat.jpg';
+import portraitsA from '../../assets/images/accueil/activites/portraits-personnalises-2a.jpg';
+import portraitsB from '../../assets/images/accueil/activites/portraits-personnalises-homepage-anne.jpg';
+import spectacleLeopold from '../../assets/images/accueil/activites/dessin-spectacle-leopold-lemarchand.jpg';
+import spectacleAmixem from '../../assets/images/accueil/activites/dessin-spectacle-amixem-thomas-deseur.jpg';
+import creationContenu from '../../assets/images/accueil/activites/creation-contenu.jpg';
+import bdA from '../../assets/images/accueil/activites/bd-illustration-5a.jpg';
+import bdB from '../../assets/images/accueil/activites/bd-illustration-5b.jpg';
+
+import anneBioPhoto from '../../assets/images/accueil/anne-portrait-bio.jpg';
+
+import cBardot from '../../assets/images/accueil/carreaux14/portrait-brigitte-bardot.jpg';
+import cCoco from '../../assets/images/accueil/carreaux14/portrait-coco.jpg';
+import cDiane from '../../assets/images/accueil/carreaux14/portrait-diane.jpg';
+import cLeopold from '../../assets/images/accueil/carreaux14/leopold-europeen-scene.jpg';
+import cManonBril from '../../assets/images/accueil/carreaux14/premiere-manon-bril-europeen.jpg';
+import cWia from '../../assets/images/accueil/carreaux14/wia-young-avec-anne.jpg';
+import cCanal from '../../assets/images/accueil/carreaux14/anne-canal-st-martin.jpg';
+import cPantheon from '../../assets/images/accueil/carreaux14/anne-dessine-pantheon.jpg';
+import cPrime from '../../assets/images/accueil/carreaux14/prime-eric-et-ramzy.jpg';
+import cCongres from '../../assets/images/accueil/carreaux14/congres-anne-dessine.jpg';
+import cForum from '../../assets/images/accueil/carreaux14/forum-des-images.jpg';
+import cAmixem from '../../assets/images/accueil/carreaux14/thomas-deseur-amixem.jpg';
+import cThreeman from '../../assets/images/accueil/carreaux14/avignon-threeman-show.jpg';
+import cMoussou from '../../assets/images/accueil/carreaux14/marche-noel-tuileries-moussou.jpg';
+
+import igA from '../../assets/images/accueil/instagram-placeholder/bd-insta-2.jpg';
+import igB from '../../assets/images/accueil/instagram-placeholder/bd-insta-4.jpg';
+import igC from '../../assets/images/accueil/instagram-placeholder/bd-insta-5.jpg';
+import igD from '../../assets/images/accueil/instagram-placeholder/bd-insta-6.jpg';
+import igE from '../../assets/images/accueil/instagram-placeholder/bd-insta-8.jpg';
+import igF from '../../assets/images/accueil/instagram-placeholder/bd-insta-9.jpg';
+
+const lang = getCurrentLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const a = t.accueil;
+const prefix = lang === 'en' ? '/en' : '';
+
+const carouselSlides = [
+  {
+    titre: a.activites[0].titre,
+    panel: 'violet' as const,
+    media: [
+      { type: 'image' as const, src: dessinDirectAction, alt: 'Anne dessine un participant en direct lors d\'un événement professionnel' },
+      { type: 'image' as const, src: dessinDirectResultat, alt: 'Jean-Philippe tient fièrement le portrait qu\'Anne vient de dessiner de lui' },
+    ],
+  },
+  {
+    titre: a.activites[1].titre,
+    panel: 'blanc' as const,
+    media: [
+      { type: 'image' as const, src: portraitsA, alt: 'Portrait personnalisé au feutre violet et jaune' },
+      { type: 'image' as const, src: portraitsB, alt: 'Portrait personnalisé au feutre violet et jaune', fit: 'contain' as const },
+    ],
+  },
+  {
+    titre: a.activites[3].titre,
+    panel: 'jaune' as const,
+    media: [{ type: 'image' as const, src: creationContenu, alt: 'Anne filme une rencontre pendant qu\'elle dessine, pour Instagram et TikTok' }],
+  },
+  {
+    titre: a.activites[2].titre,
+    panel: 'violet' as const,
+    media: [
+      { type: 'image' as const, src: spectacleLeopold, alt: 'Léopold Lemarchand sur scène au Théâtre de l\'Européen, tenant le portrait qu\'Anne vient de dessiner de lui en direct' },
+      { type: 'image' as const, src: spectacleAmixem, alt: 'Anne dessine sur la main de l\'humoriste Thomas Deseur, avec Amixem, sur un plateau' },
+    ],
+  },
+  {
+    titre: a.activites[4].titre,
+    panel: 'blanc' as const,
+    media: [
+      { type: 'image' as const, src: bdA, alt: 'Planche de bande dessinée d\'Anne', fit: 'contain' as const },
+      { type: 'image' as const, src: bdB, alt: 'Case de bande dessinée d\'Anne, univers violet et jaune' },
+    ],
+  },
+];
+
+// Grille des 16 cases — uniquement des images du dossier "16 carreaux".
+// Ordre volontairement entrelacé (portraits / spectacle / events / vidéos / collabs
+// jamais deux du même type côte à côte) — voir fr.json "grille.items" pour l'ordre exact.
+const gridMedia: { type: 'image' | 'video'; src: any; poster?: any }[] = [
+  { type: 'image', src: cBardot },
+  { type: 'image', src: cWia },
+  { type: 'image', src: cLeopold },
+  { type: 'image', src: cCanal },
+  { type: 'video', src: '/videos/radio-nova-europeen.mp4' },
+  { type: 'image', src: cCoco },
+  { type: 'image', src: cPrime },
+  { type: 'image', src: cCongres },
+  { type: 'image', src: cManonBril },
+  { type: 'image', src: cPantheon },
+  { type: 'video', src: '/videos/stunfest-live.mp4' },
+  { type: 'image', src: cDiane },
+  { type: 'image', src: cAmixem },
+  { type: 'image', src: cForum },
+  { type: 'image', src: cThreeman },
+  { type: 'image', src: cMoussou },
+];
+const gridColors: ('violet' | 'yellow')[] = [
+  'violet', 'yellow', 'violet', 'yellow', 'violet', 'yellow', 'violet', 'yellow',
+  'violet', 'yellow', 'violet', 'yellow', 'violet', 'yellow', 'violet', 'yellow',
+];
+
+// Cases de la grille cliquables vers une vidéo Instagram précise — au clic seulement,
+// le survol (overlay/légende) ne change pas. Repérées par le titre de la case (fr.json
+// "grille.items"), identique en fr/en.
+const gridLinks: Record<string, string> = {
+  'Léopold Lemarchand': 'https://www.instagram.com/p/DPwZfAcjFqC/',
+  'Amixem & Thomas Deseur': 'https://www.instagram.com/p/DT8Za7iDC_B/',
+  'The Threeman Show': 'https://www.instagram.com/p/DcOHEyKMpuR/',
+  'Canal Saint-Martin': 'https://www.instagram.com/p/DWPBOx8DJjK/',
+  'Amazon Prime × Éric & Ramzy': 'https://www.instagram.com/p/DVRS85MDDq-/',
+};
+
+const igPlaceholders = [igA, igB, igC, igD, igE, igF];
+---
+
+<BaseLayout title="Anne Leblanc — Artiste, dessinatrice, autrice">
+  <!-- Activités : carrousel plein écran sous le header -->
+  <ActivityCarousel slides={carouselSlides} />
+
+  <p class="mx-auto max-w-2xl px-5 pt-14 text-center font-display text-xl leading-relaxed text-ink md:pt-20 md:text-2xl">
+    {a.activitesIntro}
+  </p>
+  <PencilStroke variant="ligne" class="mx-auto mt-4 h-7 w-56 text-violet-600 md:mt-6" />
+
+  <!-- Bio courte, fond violet clair prolongé jusqu'à la grille (pas d'espace blanc entre les deux) -->
+  <section class="mt-16 bg-violet-50 pb-10 md:mt-24 md:pb-14">
+    <div class="mx-auto max-w-5xl px-5 pt-12 md:pt-16">
+      <div class="grid items-center gap-8 md:grid-cols-[2fr_3fr] md:gap-14">
+        <Image
+          src={anneBioPhoto}
+          alt="Anne Leblanc, carnet et crayon à la main, souriante"
+          widths={[400, 700, 1000]}
+          sizes="(min-width: 768px) 35vw, 90vw"
+          class="mx-auto aspect-[4/5] w-full max-w-sm rounded-md object-cover md:mx-0"
+        />
+        <div>
+          <p class="-mt-6 ml-4 font-logo text-[40px] text-violet-600 md:-mt-7 md:ml-6">{a.bioBonjour}</p>
+          <h2 class="mt-1 font-signature text-2xl text-violet-700 md:text-3xl">{a.bioTitre}</h2>
+          <p class="mt-4 text-lg leading-relaxed text-violet-600">{a.bio}</p>
+          <a
+            href={`${prefix}/a-propos`}
+            class="mt-6 inline-block rounded-full bg-violet-600 px-7 py-3 text-sm text-paper transition-colors hover:bg-violet-700"
+          >
+            {a.bioCta}
+          </a>
+        </div>
+      </div>
+    </div>
+    <PencilStroke variant="ligne" class="mx-auto mt-10 h-7 w-56 text-violet-600 md:mt-14" />
+  </section>
+
+  <!-- Grille : 16 cases (dossier "16 carreaux" uniquement) -->
+  <section class="border-t border-ink/10">
+    <div class="grid grid-cols-2 gap-0.5 bg-ink/10 sm:grid-cols-3 md:grid-cols-4">
+      {a.grille.items.map((item: { titre: string; legende: string }, i: number) => (
+        <GridCell titre={item.titre} legende={item.legende} color={gridColors[i]} href={gridLinks[item.titre]}>
+          {gridMedia[i].type === 'video' ? (
+            <video class="h-full w-full object-cover" autoplay loop muted playsinline>
+              <source src={gridMedia[i].src as string} type="video/mp4" />
+            </video>
+          ) : (
+            <Image
+              src={gridMedia[i].src}
+              alt={item.titre}
+              widths={[300, 500, 800]}
+              sizes="(min-width: 768px) 25vw, 50vw"
+              class="h-full w-full object-cover"
+            />
+          )}
+        </GridCell>
+      ))}
+    </div>
+  </section>
+
+  <!-- Instagram : bande texte + galerie manuelle -->
+  <section class="border-t border-ink/10 py-14 md:py-20">
+    <InstagramDivider href={t.meta.instagramUrl} label={`Suis Anne sur Instagram ${t.meta.instagramHandle}`} />
+
+    <!-- Galerie manuelle, à mettre à jour à la main — images provisoires (dossier bd/) en attendant la sélection définitive d'Anne -->
+    <div class="mx-auto mt-10 grid max-w-5xl grid-cols-3 gap-1 px-5 md:grid-cols-6">
+      {igPlaceholders.map((img, i) => (
+        <a href={t.meta.instagramUrl} target="_blank" rel="noopener noreferrer" class="block aspect-square overflow-hidden bg-paper-dim">
+          <Image
+            src={img}
+            alt="Publication Instagram d'Anne Leblanc"
+            widths={[200, 350]}
+            sizes="(min-width: 768px) 16vw, 33vw"
+            class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            loading={i < 3 ? 'eager' : 'lazy'}
+          />
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- À partir d'ici : fond violet jusqu'au bas de la page (voir aussi Footer.astro) -->
+  <section class="bg-violet-600">
+    <div class="mx-auto max-w-6xl px-5 py-16 text-center md:py-20">
+      <h2 class="font-serif text-3xl text-paper md:text-4xl">{a.ctaTitre}</h2>
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a
+          href={t.meta.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-full bg-yellow-500 px-7 py-3 text-sm text-violet-700 transition-colors hover:bg-yellow-400"
+        >
+          {a.ctaInstagram}
+        </a>
+        <a
+          href={`${prefix}/travailler-avec-moi`}
+          class="rounded-full border border-paper/40 px-7 py-3 text-sm text-paper transition-colors hover:border-paper hover:bg-paper/10"
+        >
+          {a.ctaTravailler}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,743 @@
+{
+  "meta": {
+    "siteName": "Anne Leblanc",
+    "instagramHandle": "@itsanneleblanc",
+    "instagramUrl": "https://www.instagram.com/itsanneleblanc",
+    "tiktokUrl": "https://www.tiktok.com/@itsanneleblanc",
+    "youtubeUrl": "https://www.youtube.com/@itsanneleblanc",
+    "contactEmail": "anneleblanc.art@gmail.com"
+  },
+  "nav": {
+    "accueil": "Accueil",
+    "travail": "Portfolio",
+    "travailler": "Travailler avec Anne",
+    "apropos": "Bio",
+    "contact": "Contact",
+    "commandePortrait": "Commande de portrait",
+    "mentionsLegales": "Mentions légales",
+    "langSwitchLabel": "EN"
+  },
+  "accueil": {
+    "activitesIntro": "Le fil conducteur de tout ce que je fais : la rencontre, l'observation des gens, et le dessin comme moyen de créer une expérience ou de raconter quelque chose.",
+    "activites": [
+      {
+        "titre": "Dessin en direct",
+        "description": "Je dessine les invités, les artistes et les moments forts d'un événement, directement sur place, pour créer des souvenirs uniques."
+      },
+      {
+        "titre": "Portraits personnalisés",
+        "description": "Je réalise à la main des portraits originaux sur papier, à partir de vos photos, pour offrir ou garder un souvenir unique."
+      },
+      {
+        "titre": "Dessin & spectacle",
+        "description": "Je dessine les artistes en direct, sur scène ou dans les coulisses, pour capturer l'énergie d'un spectacle et de ceux qui le font vivre."
+      },
+      {
+        "titre": "Création de contenu",
+        "description": "Je filme mes rencontres et mes dessins pour raconter des histoires humaines sur Instagram et TikTok, entre dessin, conversation et humour."
+      },
+      {
+        "titre": "Bande dessinée & illustration",
+        "description": "Je transforme mes observations et mes réflexions sur les relations humaines et la société en dessins et bandes dessinées simples, accessibles et spontanées."
+      }
+    ],
+    "bioBonjour": "Bonjour !",
+    "bioTitre": "À propos d'Anne",
+    "bio": "Anne Leblanc est dessinatrice, illustratrice, créatrice de contenu et autrice. Fascinée par les gens — leurs visages, leurs habitudes, leurs petites contradictions — elle observe avant de dessiner, et dessine pour mieux comprendre. Portraits sur le vif, dessin live, bande dessinée ou collaborations : à travers des formes très simples, elle cherche à transformer ce qu'elle observe en histoires humaines accessibles, qui donnent envie de regarder le monde autrement.",
+    "bioCta": "En savoir plus",
+    "grille": {
+      "items": [
+        {
+          "titre": "Brigitte Bardot",
+          "legende": "Un portrait d'icône, entre référence et interprétation."
+        },
+        {
+          "titre": "WIA Young Leaders",
+          "legende": "Portraits dessinés lors d'une conférence de femmes leaders."
+        },
+        {
+          "titre": "Léopold Lemarchand",
+          "legende": "Dessiné en direct, sur scène, au Théâtre de l'Européen."
+        },
+        {
+          "titre": "Canal Saint-Martin",
+          "legende": "Observer, s'asseoir, dessiner."
+        },
+        {
+          "titre": "Radio Nova à l'Européen",
+          "legende": "Le dessin en direct, capté sur le vif."
+        },
+        {
+          "titre": "Coco",
+          "legende": "« N'aie pas peur du changement et fonce !! »"
+        },
+        {
+          "titre": "Amazon Prime × Éric & Ramzy",
+          "legende": "Une histoire dessinée, racontée à une marque et son public."
+        },
+        {
+          "titre": "Congrès des audioprothésistes",
+          "legende": "Des rencontres professionnelles transformées en portraits."
+        },
+        {
+          "titre": "Première à l'Européen",
+          "legende": "Bravo Manon — un souvenir de la soirée, encadré."
+        },
+        {
+          "titre": "Panthéon",
+          "legende": "Un carnet, un stylo, un coin de rue."
+        },
+        {
+          "titre": "Stunfest",
+          "legende": "Deux jours de dessin en direct, à Rennes."
+        },
+        {
+          "titre": "Diane",
+          "legende": "Le liseré jaune, signature de chaque portrait."
+        },
+        {
+          "titre": "Amixem & Thomas Deseur",
+          "legende": "Dessiner sur la main, devant Pierre Niney."
+        },
+        {
+          "titre": "Forum des images",
+          "legende": "Un portrait, un souvenir, une salle de cinéma."
+        },
+        {
+          "titre": "The Threeman Show",
+          "legende": "Un trio dessiné dans les rues d'Avignon, festival 2026."
+        },
+        {
+          "titre": "Moussou",
+          "legende": "La vendeuse de gaufres du marché de Noël des Tuileries."
+        }
+      ]
+    },
+    "signature": "Je dessine les gens pour mieux les regarder.",
+    "ctaTitre": "Envie de voir la suite ?",
+    "ctaInstagram": "Suivre sur Instagram",
+    "ctaTravailler": "Travailler avec Anne"
+  },
+  "travailler": {
+    "intro": {
+      "titre": "Travailler avec Anne",
+      "texte": "c'est faire appel à une artiste qui transforme une rencontre, un événement ou une idée en dessin, pour un événement, une marque ou un projet artistique, sur devis.",
+      "lienPortrait": "Vous cherchez un portrait personnalisé ? → Voir les tarifs et commander"
+    },
+    "prestations": {
+      "titre": "Prestations sur devis",
+      "familles": [
+        {
+          "titre": "Dessin live & événements",
+          "texte": "Mariages, anniversaires, soirées privées, événements de marque, lancements de produits, événements d'entreprise, festivals, salons, conférences, spectacles, événements culturels : Anne dessine en direct les invités et les moments forts, pour créer un vrai souvenir et une vraie expérience autour de l'événement."
+        },
+        {
+          "titre": "Projets artistiques & collaborations",
+          "texte": "Création de contenu, collaborations avec des artistes ou créateurs, bande dessinée sur mesure, illustration, intervention artistique, projet éditorial, concept de marque, formats hybrides dessin/vidéo."
+        },
+        {
+          "titre": "Vidéo & réseaux sociaux",
+          "texte": "Contenu filmé autour d'une prestation, formats combinant dessin et vidéo, destinés aux réseaux d'Anne, à ceux du client, ou aux deux."
+        }
+      ],
+      "reseauxSociaux": "Anne est très suivie sur Instagram et TikTok (@itsanneleblanc) — un vrai argument pour les marques et organisateurs d'événements qui cherchent aussi de la visibilité autour de leur événement.",
+      "ctaDevis": "Décrire mon projet",
+      "ctaFaq": "Voir la FAQ"
+    },
+    "devis": {
+      "titre": "Demander un devis",
+      "titreCourt": "Devis",
+      "texte": "Décrivez votre projet ci-dessous — plus la demande est précise, plus Anne pourra vous répondre vite et bien.",
+      "champs": {
+        "nom": "Nom",
+        "email": "Email",
+        "telephone": "Téléphone (optionnel)",
+        "typeProjet": "Type d'événement ou de projet",
+        "date": "Date souhaitée",
+        "lieu": "Lieu",
+        "invites": "Nombre approximatif d'invités / participants",
+        "duree": "Durée souhaitée / horaires",
+        "prestation": "Prestation souhaitée",
+        "prestationPlaceholder": "Choisir…",
+        "prestationOptions": [
+          "Dessin live",
+          "Collaboration / projet artistique",
+          "Autre"
+        ],
+        "besoins": "Besoins particuliers",
+        "budget": "Budget indicatif (optionnel)",
+        "message": "Message libre",
+        "consentement": "J'accepte que les informations transmises via ce formulaire soient utilisées par Anne Leblanc dans le cadre du traitement de ma demande.",
+        "conservation": "Ces informations sont conservées le temps nécessaire au traitement de votre demande. Vous pouvez demander leur suppression à tout moment en écrivant à anneleblanc.art@gmail.com.",
+        "envoyer": "Envoyer ma demande"
+      },
+      "confirmationTitre": "Merci !",
+      "confirmation": "Ta demande a bien été envoyée. Anne te répondra dès que possible.",
+      "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+    },
+    "portraits": {
+      "titre": "Commandes de portraits personnalisés",
+      "retour": "Vous organisez un événement plutôt ? → Voir les prestations sur devis",
+      "intro": "Anne réalise des portraits personnalisés à la main, sur papier Bristol, au feutre à alcool et au crayon de couleur. Chaque dessin est un original unique réalisé d'après les photographies fournies par le client. Les tarifs comprennent le dessin et les fournitures artistiques. Le temps de préparation, d'emballage et d'expédition est à prévoir en plus du temps de dessin.",
+      "delai": "Les commandes sont actuellement réalisées avec un délai indicatif de 2 semaines à compter de la validation de la commande et de la réception des photographies nécessaires.",
+      "formats": [
+        {
+          "nom": "Format A5",
+          "dimensions": "14,8 × 21 cm",
+          "rows": [
+            [
+              "1 personne",
+              "160 €"
+            ],
+            [
+              "2 personnes",
+              "205 €"
+            ],
+            [
+              "3 personnes",
+              "250 €"
+            ],
+            [
+              "4 personnes",
+              "295 €"
+            ],
+            [
+              "5 personnes",
+              "340 €"
+            ]
+          ],
+          "supplement": "Personne supplémentaire : +45 €",
+          "note": "Le format A5 est particulièrement adapté aux portraits individuels, couples et petites compositions."
+        },
+        {
+          "nom": "Format A4",
+          "dimensions": "21 × 29,7 cm",
+          "rows": [
+            [
+              "1 personne",
+              "290 €"
+            ],
+            [
+              "2 personnes",
+              "350 €"
+            ],
+            [
+              "3 personnes",
+              "415 €"
+            ],
+            [
+              "4 personnes",
+              "475 €"
+            ],
+            [
+              "5 personnes",
+              "540 €"
+            ]
+          ],
+          "supplement": "Personne supplémentaire : +65 €",
+          "note": "Le format A4 permet davantage de détails et convient particulièrement aux portraits de famille ou aux compositions réunissant plusieurs personnes."
+        },
+        {
+          "nom": "Format A3",
+          "dimensions": "29,7 × 42 cm",
+          "rows": [
+            [
+              "1 personne",
+              "430 €"
+            ],
+            [
+              "2 personnes",
+              "515 €"
+            ],
+            [
+              "3 personnes",
+              "595 €"
+            ],
+            [
+              "4 personnes",
+              "675 €"
+            ]
+          ],
+          "supplement": "Personne supplémentaire : +80 €",
+          "note": "Le format A3 est destiné aux grandes compositions et aux dessins que l'on souhaite particulièrement mettre en valeur ou encadrer."
+        }
+      ],
+      "audela": "Pour les compositions de 5 personnes ou plus, un devis personnalisé sera proposé.",
+      "personnalisation": {
+        "titre": "Personnalisation",
+        "texte": "Les tarifs correspondent à un portrait réalisé à partir des photographies fournies par le client. Il est possible d'ajouter des éléments personnalisés afin de raconter une histoire particulière autour du portrait : animaux, objets, fleurs, vêtements ou accessoires spécifiques, décor, lieu particulier, texte ou inscription, éléments symboliques, plusieurs photographies différentes pour composer une seule scène, ou toute autre demande particulière.",
+        "texte2": "Les demandes nécessitant un travail de composition ou de dessin supplémentaire font l'objet d'un supplément, annoncé avant validation de la commande.",
+        "exemplesTitre": "Exemples de suppléments :",
+        "exemples": [
+          "Personnalisation simple : à partir de +25 €",
+          "Décor ou composition élaborée : à partir de +55 €",
+          "Composition particulièrement complexe : sur devis"
+        ],
+        "note": "Le tarif exact est communiqué avant le début du dessin."
+      },
+      "urgence": {
+        "titre": "Commandes urgentes",
+        "texte": "Le délai standard est actuellement d'environ 2 semaines. Une commande nécessitant une réalisation prioritaire peut être acceptée selon les disponibilités d'Anne.",
+        "exemples": [
+          "Commande avec délai inférieur à 2 semaines : +30 %",
+          "Commande particulièrement urgente nécessitant une réalisation prioritaire : jusqu'à +50 %, selon le délai demandé."
+        ],
+        "note": "Les commandes urgentes ne peuvent être garanties qu'après confirmation d'Anne."
+      },
+      "expedition": {
+        "titre": "Expédition",
+        "texte": "Les dessins sont soigneusement protégés et emballés afin de pouvoir être offerts ou conservés dans de bonnes conditions. Les frais d'expédition sont facturés en supplément et dépendent de la destination et du format du dessin. Une remise en main propre à Paris peut être envisagée sur demande."
+      },
+      "commander": {
+        "titre": "Comment passer commande ?",
+        "intro": "Pour demander un portrait, le client doit fournir :",
+        "items": [
+          "Le format souhaité (A5, A4 ou A3).",
+          "Le nombre de personnes à dessiner.",
+          "Les photographies de référence — suffisamment nettes pour voir clairement les visages et les caractéristiques des personnes. Plusieurs photographies peuvent être envoyées si le client souhaite réunir des personnes qui ne figurent pas sur la même photo.",
+          "Les éventuelles personnalisations (décor, objets, animaux, vêtements, texte, composition particulière, etc.).",
+          "La date à laquelle le dessin est souhaité (délai standard : environ 2 semaines).",
+          "L'adresse de livraison.",
+          "S'il s'agit d'un cadeau, le client peut préciser l'occasion afin qu'Anne puisse éventuellement adapter la présentation ou ajouter un petit mot."
+        ]
+      },
+      "avantDeCommander": {
+        "titre": "À savoir avant de commander",
+        "items": [
+          {
+            "titre": "Chaque dessin est fait à la main.",
+            "texte": "Les portraits sont dessinés individuellement au feutre à alcool et au crayon de couleur sur papier Bristol. Il ne s'agit pas d'une impression ou d'une reproduction numérique."
+          },
+          {
+            "titre": "Le dessin est une interprétation artistique.",
+            "texte": "Anne cherche à réaliser un portrait fidèle à la personne tout en conservant son propre style de dessin. Le résultat n'est donc pas une reproduction photographique."
+          },
+          {
+            "titre": "Les commandes personnalisées ne comprennent pas de modifications illimitées.",
+            "texte": "Une fois le dessin commencé, les modifications importantes peuvent nécessiter de recommencer une partie du travail et pourront donc entraîner un supplément. Les demandes particulières doivent idéalement être précisées avant le début du dessin."
+          },
+          {
+            "titre": "Les photographies doivent être de bonne qualité.",
+            "texte": "La qualité des photographies de référence influence directement la qualité du portrait. Anne peut demander d'autres photographies si les images fournies ne permettent pas de réaliser correctement le dessin."
+          }
+        ]
+      },
+      "projetsParticuliers": {
+        "titre": "Pour les projets particuliers",
+        "texte": "Pour toute demande qui ne correspond pas à cette grille — grande famille, plusieurs dessins, événement, cadeau d'entreprise, projet artistique particulier, commande en grande quantité, etc. — un devis personnalisé peut être établi."
+      },
+      "ctaCommander": "Passer commande",
+      "form": {
+        "titre": "Passer commande",
+        "texte": "Décrivez votre commande ci-dessous — plus la demande est précise, plus Anne pourra vous répondre vite et bien.",
+        "champs": {
+          "nom": "Nom",
+          "email": "Email",
+          "telephone": "Téléphone (optionnel)",
+          "format": "Format souhaité",
+          "formatPlaceholder": "Choisir…",
+          "formatOptions": ["A5", "A4", "A3"],
+          "personnes": "Nombre de personnes à dessiner",
+          "personnalisations": "Personnalisations éventuelles (décor, objets, animaux, vêtements, texte, etc.)",
+          "date": "Date souhaitée",
+          "photosNote": "Photographies de référence : à envoyer par email à anneleblanc.art@gmail.com après validation de la demande.",
+          "adresse": "Adresse de livraison",
+          "message": "Message libre / besoins particuliers",
+          "envoyer": "Envoyer ma demande de commande"
+        },
+        "confirmationTitre": "Merci !",
+        "confirmation": "Ta demande de commande a bien été envoyée. Anne te répondra dès que possible.",
+        "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+      }
+    },
+    "galeries": {
+      "titre": "Événements déjà réalisés",
+      "texte": "Un aperçu de quelques prestations passées.",
+      "items": [
+        {
+          "titre": "WIA Young Leaders",
+          "texte": "Anne est intervenue à Paris lors d'une soirée organisée par WIA Young Leaders, réunissant des femmes leaders. Elle a réalisé des portraits sur le vif des participantes tout au long de la soirée.",
+          "annee": "2026",
+          "lieu": "Paris"
+        },
+        {
+          "titre": "Congrès des audioprothésistes",
+          "texte": "Anne a participé à Paris au Congrès des audioprothésistes, un rassemblement professionnel dédié au secteur de l'audioprothèse, où elle a dessiné sur le vif les professionnels présents.",
+          "annee": "2026",
+          "lieu": "Paris"
+        },
+        {
+          "titre": "Amazon Prime × Éric & Ramzy",
+          "texte": "Anne a dessiné Éric et Ramzy à l'avant-première du film « Tout simplement fan » à Paris, où elle était invitée par Amazon Prime.",
+          "annee": "2026",
+          "lieu": "Paris"
+        },
+        {
+          "titre": "Stunfest",
+          "texte": "Anne a été présente pendant deux jours au Stunfest, festival rennais consacré notamment au jeu vidéo et à la culture gaming, où elle a réalisé des portraits sur le vif des visiteurs.",
+          "annee": "2025",
+          "lieu": "Rennes"
+        },
+        {
+          "titre": "Marché des Arts",
+          "texte": "Anne est intervenue au Marché des Arts à Nantes, où elle a dessiné sur le vif les visiteurs ainsi que les personnes tenant les stands de nourriture.",
+          "annee": "2026",
+          "lieu": "Nantes"
+        },
+        {
+          "titre": "Soirée De Maarse",
+          "texte": "Anne a réalisé des portraits sur le vif lors d'une soirée privée organisée à Montmartre par De Maarse, marque de bijoux.",
+          "annee": "2025",
+          "lieu": "Paris"
+        },
+        {
+          "titre": "Théâtre de l'Européen — Léopold Lemarchand",
+          "texte": "Le 10 octobre 2025, Anne a dessiné en direct sur scène l'humoriste Léopold Lemarchand, au Théâtre de l'Européen à Paris, devant environ 350 personnes.",
+          "annee": "2025",
+          "lieu": "Paris"
+        },
+        {
+          "titre": "Festival d'Avignon",
+          "texte": "Anne a dessiné sur le vif les artistes se produisant au Festival d'Avignon, au fil des spectacles.",
+          "annee": "2026",
+          "lieu": "Avignon"
+        }
+      ]
+    },
+    "faq": {
+      "titre": "FAQ — Travailler avec Anne",
+      "categories": [
+        {
+          "nom": "Dessin live & événements",
+          "questions": [
+            {
+              "q": "Que propose Anne lors d'un événement ?",
+              "r": "Anne dessine les personnes présentes et les moments qui se déroulent sous ses yeux, directement sur place. Elle peut réaliser des portraits individuels, des portraits de couple ou de groupe, mais aussi saisir des instants spontanés et des interactions entre les invités. L'objectif n'est pas seulement de repartir avec un dessin : le dessin crée également une véritable expérience et un moment d'échange avec les personnes qu'elle rencontre."
+            },
+            {
+              "q": "Dans quels types d'événements Anne peut-elle intervenir ?",
+              "r": "Anne peut intervenir aussi bien pour des événements privés que professionnels : mariages, anniversaires, soirées privées, événements de marques, lancements de produits, événements d'entreprise, festivals, salons, conférences, spectacles ou événements culturels. Elle peut également imaginer des formats plus spécifiques avec une marque, un artiste ou une agence. Si un projet ne correspond pas exactement à ces exemples, il est tout de même possible de la contacter pour en discuter."
+            },
+            {
+              "q": "Comment se déroule une prestation de dessin live ?",
+              "r": "Anne arrive sur le lieu de l'événement avec son matériel et s'installe dans un endroit qui lui permet de circuler facilement et de voir les invités. Elle peut ensuite aller à la rencontre des personnes à dessiner ou être installée à un emplacement identifié où les invités viennent la voir. Elle dessine directement sur place et privilégie une approche spontanée : les personnes n'ont pas nécessairement besoin de poser longuement. Le déroulement exact est défini en amont en fonction du type d'événement, du nombre d'invités et du temps disponible."
+            },
+            {
+              "q": "Les invités doivent-ils poser ?",
+              "r": "Non. Anne peut réaliser des portraits à partir d'une courte pose, mais elle aime également observer les personnes dans leur environnement et capturer des attitudes ou des moments spontanés. Pour certains événements, elle peut donc réaliser des portraits surprises, en choisissant elle-même les personnes ou les moments qu'elle trouve intéressants à dessiner."
+            },
+            {
+              "q": "Combien de personnes Anne peut-elle dessiner pendant un événement ?",
+              "r": "Cela dépend du format, du nombre d'heures de présence et du type de dessins souhaité. Un portrait individuel prend généralement autour d'une quinzaine de minutes lorsqu'il est réalisé dans le cadre d'un événement, mais la cadence peut varier selon le niveau de détail et le format choisi. Plutôt que de promettre un nombre fixe de portraits, Anne préfère définir un objectif réaliste en fonction de l'événement. Si un grand nombre de personnes doit être dessiné, il est conseillé de le préciser dans la demande afin qu'elle puisse proposer le format le plus adapté."
+            },
+            {
+              "q": "Les dessins sont-ils terminés et remis le jour même ?",
+              "r": "Lorsque le format de la prestation le permet, les dessins sont réalisés et remis directement aux invités pendant l'événement. Pour certains projets nécessitant davantage de temps ou un niveau de finition particulier, les dessins peuvent être finalisés ou envoyés ultérieurement. Les modalités sont précisées dans le devis."
+            },
+            {
+              "q": "Anne peut-elle dessiner autre chose que des portraits ?",
+              "r": "Oui. Elle peut notamment dessiner des scènes, des couples, des groupes, des interactions entre plusieurs personnes ou des moments particuliers de l'événement. Le dessin peut également être adapté à un concept précis imaginé avec le client."
+            },
+            {
+              "q": "Une prestation peut-elle être personnalisée pour une marque ou un événement ?",
+              "r": "Oui. La prestation peut être pensée en fonction de l'identité d'une marque, d'un événement ou d'une campagne : format des dessins, papier, présentation, intégration d'un produit ou d'un univers visuel, mise en scène de la prestation, etc. Anne peut également réfléchir avec une agence ou une marque à un concept plus original autour du dessin."
+            },
+            {
+              "q": "Anne peut-elle intervenir pour un mariage ?",
+              "r": "Oui. Le dessin live peut notamment intervenir pendant le cocktail, le vin d'honneur ou une partie de la réception. Anne peut dessiner les mariés, les invités, des groupes ou certains moments spontanés de la journée. Chaque mariage étant différent, le format est défini avec les futurs mariés ou l'organisateur en fonction du déroulement de la journée et du nombre d'invités."
+            },
+            {
+              "q": "Anne se déplace-t-elle ?",
+              "r": "Oui. Anne est basée à Paris et peut se déplacer en France et à l'étranger pour des projets. Les éventuels frais de déplacement, de transport et d'hébergement sont à prévoir en supplément lorsque le projet le nécessite. Ils sont indiqués clairement dans le devis."
+            },
+            {
+              "q": "Combien de temps à l'avance faut-il réserver ?",
+              "r": "Le plus tôt est le mieux, particulièrement pour les mariages, événements importants et projets nécessitant un déplacement. Il reste néanmoins possible de contacter Anne pour un événement proche : elle indiquera simplement si elle est disponible. La date n'est définitivement bloquée qu'après validation du devis et selon les modalités indiquées dans celui-ci."
+            }
+          ]
+        },
+        {
+          "nom": "Commandes personnalisées",
+          "questions": [
+            {
+              "q": "Anne réalise-t-elle des commandes personnalisées ?",
+              "r": "Oui. Anne réalise des portraits personnalisés à la main à partir de photographies. Elle travaille principalement sur papier Bristol avec des feutres à alcool et des crayons de couleur. Les tarifs dépendent du format et du nombre de personnes représentées (voir grille tarifaire ci-dessus)."
+            },
+            {
+              "q": "Peut-on commander un dessin avec plusieurs personnes ?",
+              "r": "Oui. Anne peut réaliser des portraits de couples, de familles, de groupes d'amis ou plusieurs personnes réunies sur un même dessin. Le tarif évolue en fonction du format et du nombre de personnes."
+            },
+            {
+              "q": "Peut-on demander des éléments personnalisés dans le dessin ?",
+              "r": "Oui. Il est possible d'ajouter certains éléments particuliers : objets, animaux, vêtements, décors, lieux, accessoires ou autres détails qui ont une importance pour le client. Les demandes nécessitant un travail supplémentaire peuvent entraîner un supplément, qui sera indiqué avant validation de la commande."
+            },
+            {
+              "q": "Peut-on demander une commande urgente ?",
+              "r": "Oui, selon les disponibilités d'Anne. Le délai habituel est actuellement d'environ 2 semaines, hors éventuel délai d'expédition. Une demande urgente peut entraîner un supplément en fonction du délai demandé et de sa charge de travail. Anne confirme toujours la possibilité et le tarif avant de commencer."
+            },
+            {
+              "q": "À partir de quelles photos Anne travaille-t-elle ?",
+              "r": "Anne travaille à partir de photographies fournies par le client. Il est préférable que les visages soient suffisamment visibles, nets et éclairés pour qu'elle puisse les observer correctement. En cas d'hésitation entre plusieurs photographies, le client peut les transmettre dans sa demande afin qu'Anne puisse indiquer celle qui lui semble la plus adaptée."
+            },
+            {
+              "q": "Combien de temps faut-il pour recevoir une commande ?",
+              "r": "Le délai habituel est actuellement d'environ 2 semaines, auquel peut s'ajouter le délai d'expédition. Le délai exact est confirmé au moment de la commande. Pour une commande urgente, il est conseillé de contacter Anne avant de valider afin qu'elle puisse vérifier ses disponibilités."
+            }
+          ]
+        },
+        {
+          "nom": "Projets & collaborations",
+          "questions": [
+            {
+              "q": "Anne accepte-t-elle uniquement des prestations de dessin live ?",
+              "r": "Non. Elle est également ouverte à des projets qui utilisent le dessin d'une autre manière : création de contenu, collaborations avec des artistes ou créateurs, bande dessinée sur mesure, illustration, intervention artistique, projet éditorial, concept pour une marque ou format hybride entre dessin et vidéo. Si un projet ne rentre pas dans une catégorie précise, il est tout à fait possible de lui présenter l'idée."
+            },
+            {
+              "q": "Anne peut-elle créer du contenu pour une marque ?",
+              "r": "Oui. Anne peut imaginer des contenus autour de son univers : dessin, rencontre, portrait, conversation, humour ou découverte d'une personne, d'un lieu ou d'un produit. Elle peut également participer à la conception du format lorsque le projet nécessite une réflexion créative. Les modalités de publication, de production et d'utilisation des contenus sont définies au cas par cas."
+            },
+            {
+              "q": "Anne peut-elle dessiner une personnalité ou un artiste ?",
+              "r": "Oui. Anne aime particulièrement les projets qui associent dessin, rencontre et spectacle. Elle peut par exemple réaliser le portrait d'un artiste, dessiner quelqu'un pendant une interview ou une rencontre, intervenir autour d'un spectacle ou imaginer un contenu autour de sa personnalité."
+            },
+            {
+              "q": "Anne peut-elle intervenir sur scène ?",
+              "r": "Oui. Elle peut intervenir dans un contexte de spectacle ou d'événement culturel et dessiner un artiste, un intervenant ou une scène en direct. Le format dépend du projet : dessin pendant une représentation, performance, création d'un portrait en direct, contenu vidéo autour de l'intervention, etc."
+            }
+          ]
+        },
+        {
+          "nom": "Vidéo & réseaux sociaux",
+          "questions": [
+            {
+              "q": "Les prestations d'Anne peuvent-elles donner lieu à du contenu sur ses réseaux ?",
+              "r": "Pas nécessairement. Lorsque cela est pertinent et avec l'accord des personnes concernées, Anne peut filmer certains moments de ses prestations et les transformer en contenu pour ses réseaux sociaux. Cela peut être prévu dès le départ avec le client lorsqu'il souhaite également bénéficier d'un contenu autour de l'événement. La création et la publication de contenu peuvent alors faire l'objet d'une prestation distincte."
+            },
+            {
+              "q": "Peut-on demander à Anne de créer une vidéo en plus du dessin ?",
+              "r": "Oui. Anne peut imaginer des formats qui combinent dessin et vidéo : rencontre avec une personne, interview pendant le dessin, coulisses d'un événement, réaction au portrait, etc. Le contenu peut être destiné à ses réseaux sociaux, à ceux du client, ou aux deux selon le projet. Les droits d'utilisation et les modalités de diffusion sont définis en amont."
+            }
+          ]
+        },
+        {
+          "nom": "Tarifs & devis",
+          "questions": [
+            {
+              "q": "Où trouver les tarifs d'Anne ?",
+              "r": "Les tarifs des commandes de portraits personnalisés sont indiqués sur la page dédiée « Commande de portrait », afin de permettre aux clients d'avoir une première idée du budget avant de contacter Anne. Pour les événements, collaborations, prestations artistiques et projets professionnels, Anne fonctionne principalement sur devis, car le prix dépend du format du projet."
+            },
+            {
+              "q": "Pourquoi les prestations événementielles sont-elles sur devis ?",
+              "r": "Une prestation peut varier énormément selon : la durée de présence, le type d'événement, le nombre d'invités, le nombre et le type de dessins souhaités, le lieu, les déplacements, le niveau de personnalisation, la création éventuelle de contenu, et les besoins spécifiques du client. Anne préfère donc établir un devis adapté plutôt qu'afficher un tarif unique qui ne correspondrait pas à tous les projets."
+            },
+            {
+              "q": "Comment demander un devis ?",
+              "r": "Le formulaire de contact ci-dessus permet de transmettre les informations essentielles concernant le projet. Plus la demande est précise, plus Anne pourra répondre efficacement."
+            },
+            {
+              "q": "Sous quel délai Anne répond-elle ?",
+              "r": "Anne fait son possible pour répondre aux demandes professionnelles et aux commandes dans les meilleurs délais. Le délai peut varier selon sa charge de travail et ses déplacements. Lorsqu'un projet comporte une date importante ou proche, il est conseillé de l'indiquer clairement dans le message."
+            },
+            {
+              "q": "Comment se déroule une collaboration après une demande ?",
+              "r": "Après réception de la demande, Anne vérifie la faisabilité du projet et ses disponibilités. Si le projet est pertinent, elle échange si nécessaire avec le client sur ses besoins puis lui adresse un devis. La prestation est confirmée après acceptation du devis et selon les conditions indiquées dans celui-ci. Pour les projets plus complexes, un brief précis peut également être défini en amont."
+            }
+          ]
+        }
+      ],
+      "autre": {
+        "titre": "Une idée qui ne rentre dans aucune catégorie ?",
+        "texte": "Parlez-lui-en. Anne est particulièrement intéressée par les projets qui utilisent le dessin d'une manière originale : événement, spectacle, marque, vidéo, bande dessinée, rencontre, performance ou projet artistique. Il n'est pas nécessaire d'avoir déjà imaginé le format parfait. Une idée ou une envie suffit pour prendre contact et réfléchir ensemble à la manière de la transformer en projet."
+      }
+    }
+  },
+  "portfolio": {
+    "titre": "Portfolio",
+    "categories": [
+      {
+        "slug": "dessin-live",
+        "titre": "Dessin live",
+        "texte": "Je dessine en direct les invités et les artistes, pendant des événements, des festivals, des soirées, des spectacles ou des lancements de marque — la spontanéité de l'instant, saisie sur le vif."
+      },
+      {
+        "slug": "collaboration-creation-contenu",
+        "titre": "Collaboration et création de contenu",
+        "texte": "Je filme mes rencontres et mes dessins pour Instagram et TikTok, où une vraie communauté me suit au quotidien — un vrai atout pour les marques et les organisateurs d'événements qui cherchent aussi de la visibilité autour de leur projet."
+      },
+      {
+        "slug": "bd-et-illustrations",
+        "titre": "BD et illustrations",
+        "texte": "Mes observations et mes réflexions sur les relations humaines et la société, transformées en planches et en illustrations simples, accessibles, spontanées."
+      },
+      {
+        "slug": "carnet",
+        "titre": "Carnet",
+        "texte": ""
+      }
+    ],
+    "instagramCta": "Suivre sur Instagram",
+    "collabInstagramTexte": "Le meilleur endroit pour découvrir tout le travail d'Anne en vidéo, c'est son compte Instagram — c'est là qu'elle publie toutes ses créations.",
+    "collabInstagramCta": "Voir plus sur Instagram",
+    "ctaTitre": "Des illustrations sur mesure, entre dessin vivant et récit visuel",
+    "ctaTexte": "Anne propose des dessins et illustrations sur mesure, entre dessin en direct, portraits personnalisés et collaborations de contenu. Son travail allie une pratique artistique sincère à la matière du papier, pour créer des pièces uniques qui racontent une histoire. Elle est disponible pour des événements, des collaborations de marque et des commandes privées.",
+    "ctaBouton": "Prendre contact"
+  },
+  "contact": {
+    "titre": "Envie de travailler ensemble ?",
+    "intro": "Événement, commande, collaboration ou simple question : Anne serait heureuse d'échanger avec vous.",
+    "profils": [
+      {
+        "type": "devis",
+        "titre": "Marque",
+        "texte": "Collaboration, création de contenu ou projet de marque.",
+        "cta": "Décrire mon projet"
+      },
+      {
+        "type": "devis",
+        "titre": "Organisateur d'événement",
+        "texte": "Dessin live pour un événement, un mariage, un lancement ou une soirée d'entreprise.",
+        "cta": "Décrire mon projet"
+      },
+      {
+        "type": "portraits",
+        "titre": "Commande de dessin",
+        "texte": "Portrait personnalisé, réalisé à partir de vos photos.",
+        "cta": "Voir les portraits"
+      },
+      {
+        "type": "email",
+        "titre": "Journaliste, éditeur, professionnel",
+        "texte": "Interview, proposition éditoriale ou toute autre demande.",
+        "cta": "Écrire à Anne"
+      }
+    ],
+    "coordonneesTitre": "Coordonnées",
+    "reseauxTitre": "Réseaux sociaux"
+  },
+  "apropos": {
+    "intro": "Anne Leblanc est une dessinatrice basée à Paris. Avant de dessiner, elle a d'abord appris à regarder.",
+    "recit": [
+      {
+        "type": "p",
+        "texte": "Elle commence par une école de théâtre, qu'elle suit pendant environ 2 ans — une première manière d'observer les gens : les corps, les expressions, la façon dont une présence peut raconter quelque chose sans parler."
+      },
+      {
+        "type": "quote",
+        "texte": "Cette période reste essentielle dans mon parcours — mon travail aujourd'hui est encore très lié à l'observation des autres."
+      },
+      {
+        "type": "p",
+        "texte": "Elle se dirige ensuite vers des études d'architecture et de scénographie, pendant deux ans — un virage guidé par l'envie de travailler l'espace, les images et la mise en scène, et par une question centrale à la scénographie : comment raconter une histoire visuellement ?"
+      },
+      {
+        "type": "p",
+        "texte": "C'est au Théâtre de l'Européen qu'elle poursuit ensuite son parcours : elle en est responsable depuis l'âge de 23 ans, entre technique et univers artistique. C'est dans ce cadre qu'elle dessine des artistes en direct sur scène, notamment l'humoriste Léopold Lemarchand, devant environ 350 personnes."
+      },
+      {
+        "type": "p",
+        "texte": "Le dessin devient alors progressivement son principal moyen d'expression. En septembre 2024, elle commence à publier ses dessins sur Instagram — d'abord ses amis, puis des inconnus rencontrés dans les parcs et les rues de Paris."
+      },
+      {
+        "type": "quote",
+        "texte": "Ce qui m'intéresse, c'est de rencontrer quelqu'un, de l'observer pendant plusieurs minutes, et d'essayer de comprendre ce qui fait son visage, son attitude, sa présence. Je ne cherche pas à reproduire quelqu'un : le dessin est pour moi une manière de regarder réellement une personne."
+      },
+      {
+        "type": "p",
+        "texte": "Elle aime dessiner sur le vif, où qu'elle soit — à la plage, au restaurant, dans la rue, en plein événement — dès qu'elle peut sortir un carnet et un stylo, avec ce côté immédiat et imprévisible : observer quelqu'un, faire des choix très vite, et transmettre quelque chose de lui avec très peu de moyens. Filmer ses dessins et les partager en ligne devient une étape importante de son parcours — à la fois pratique artistique et manière de rencontrer des gens."
+      }
+    ],
+    "sections": [
+      {
+        "titre": "Observer, comprendre, simplifier, transmettre",
+        "blocks": [
+          {
+            "type": "p",
+            "texte": "Anne observe naturellement beaucoup : elle aime regarder les gens, écouter leurs conversations, remarquer les petits détails, comprendre les dynamiques entre eux — et peut passer beaucoup de temps à essayer de comprendre quelque chose avant de produire une réponse."
+          },
+          {
+            "type": "p",
+            "texte": "Dans son travail, elle cherche à transformer cette observation en quelque chose de créatif : comprendre, puis simplifier en une image — partir de quelque chose de complexe, une personne, une émotion, une idée, et en extraire l'essentiel. C'est aussi ce qui l'attire vers la bande dessinée et la vulgarisation : rendre une idée compliquée accessible par des images simples."
+          }
+        ]
+      },
+      {
+        "titre": "Le papier comme matière",
+        "blocks": [
+          {
+            "type": "p",
+            "texte": "Le papier occupe une place importante dans sa pratique. Anne n'a pas envie de reproduire numériquement l'esthétique du dessin traditionnel : elle aime travailler la matière — papier, feutre, crayon — et les accidents qui peuvent survenir en dessinant."
+          },
+          {
+            "type": "quote",
+            "texte": "Je me suis beaucoup demandé si je devais passer au dessin sur tablette, comme beaucoup d'autres illustrateurs. Mais je me suis rendu compte que j'aime profondément le papier — j'ai aujourd'hui envie d'en faire une vraie force, plutôt que quelque chose de moins moderne."
+          },
+          {
+            "type": "p",
+            "texte": "Elle travaille sur papier Bristol, au feutre à alcool et au crayon de couleur pour ses portraits, et beaucoup au stylo bille sur carnet. Elle aime que l'objet existe réellement avant d'être numérisé — le scan n'étant qu'une manière de faire passer un objet physique dans le monde numérique."
+          }
+        ]
+      },
+      {
+        "titre": "La rencontre avant tout",
+        "blocks": [
+          {
+            "type": "p",
+            "texte": "La rencontre est au cœur de sa pratique. Quand Anne dessine quelqu'un, il ne s'agit jamais seulement de faire son portrait, mais de discuter avec cette personne, découvrir qui elle est, ce qu'elle pense, ce dont elle rêve. Le dessin devient un prétexte à la rencontre — et un petit événement en soi : on s'assoit, se laisse observer quelques minutes, découvre son portrait, et repart avec quelque chose d'inattendu."
+          },
+          {
+            "type": "p",
+            "texte": "Anne est aussi très attirée par les systèmes et les formats : prendre beaucoup d'informations, chercher les liens entre elles, puis les « essorer » jusqu'à trouver une idée centrale. Elle souhaite aujourd'hui développer une pratique qui se situe entre dessin, observation, rencontre et transmission."
+          }
+        ]
+      },
+      {
+        "titre": "Ce qu'elle cherche dans le dessin",
+        "blocks": [
+          {
+            "type": "p",
+            "texte": "Anne ne cherche pas le dessin le plus virtuose ou le plus détaillé possible, mais la bonne manière de transmettre une idée à quelqu'un. Le travail de Liv Strömquist l'a confortée dans cette idée : sa manière de prendre des sujets complexes — sociologie, amour, rapports humains — et de les transformer en bande dessinée accessible montre que la simplicité peut être une force."
+          },
+          {
+            "type": "p",
+            "texte": "Elle est aussi très attirée par les artistes qui transforment quelque chose de personnel en quelque chose d'universel — une expérience, un détail précis, dans lequel beaucoup peuvent se reconnaître. C'est une direction qu'elle aimerait continuer à développer dans son propre travail."
+          }
+        ]
+      }
+    ],
+    "ctaDevis": "Demander un devis"
+  },
+  "mentionsLegales": {
+    "titre": "Mentions légales",
+    "editeur": {
+      "titre": "Éditeur du site",
+      "intro": "Le site est édité par Anne Leblanc, entrepreneur individuel (auto-entrepreneur).",
+      "items": [
+        "Nom : Anne Leblanc",
+        "Statut : Entrepreneur individuel (auto-entrepreneur)",
+        "SIRET : 993 748 276 00017",
+        "Adresse : 66 bd Voltaire, 75011 Paris, France",
+        "Téléphone : 06 59 28 45 92",
+        "Email : anneleblanc.art@gmail.com"
+      ]
+    },
+    "directeur": {
+      "titre": "Directeur de la publication",
+      "texte": "Anne Leblanc."
+    },
+    "hebergement": {
+      "titre": "Hébergement",
+      "texte": "Le site est hébergé par :",
+      "nom": "Netlify, Inc.",
+      "adresse": "101 2nd Street, San Francisco, CA 94105, États-Unis",
+      "url": "https://www.netlify.com"
+    },
+    "propriete": {
+      "titre": "Propriété intellectuelle",
+      "texte": "L'ensemble des contenus présents sur ce site (illustrations, dessins, photographies, textes, mise en page) est la propriété d'Anne Leblanc, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, de ces contenus, par quelque procédé que ce soit, sans autorisation préalable, est interdite."
+    },
+    "donnees": {
+      "titre": "Données personnelles",
+      "texte": "Les informations transmises via le formulaire de contact/devis de ce site (nom, email, description de projet, etc.) sont utilisées uniquement dans le cadre de la demande formulée, et ne sont ni cédées ni utilisées à d'autres fins. Conformément à la réglementation en vigueur (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données, que vous pouvez exercer en écrivant à anneleblanc.art@gmail.com."
+    }
+  }
+}

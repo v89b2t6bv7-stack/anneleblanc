@@ -1,0 +1,403 @@
+---
+// Page de travail temporaire — comparatif de polices actuelles vs. alternatives.
+// Pas liée dans la navigation, pas destinée à la mise en ligne finale.
+
+const bio = "Anne Leblanc est dessinatrice, illustratrice, créatrice de contenu et autrice. Fascinée par les gens — leurs visages, leurs habitudes, leurs petites contradictions — elle observe avant de dessiner, et dessine pour mieux comprendre. Portraits sur le vif, dessin live, bande dessinée ou collaborations : à travers des formes très simples, elle cherche à transformer ce qu'elle observe en histoires humaines accessibles, qui donnent envie de regarder le monde autrement.";
+const intro = "Le fil conducteur de tout ce que je fais : la rencontre, l'observation des gens, et le dessin comme moyen de créer une expérience ou de raconter quelque chose.";
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comparatif de polices — Anne Leblanc</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Abril+Fatface&family=Jost:wght@500;600&family=Pinyon+Script&family=Parisienne&family=Alex+Brush&family=Space+Grotesk:wght@500;600&family=Syne:wght@600;700&family=Manrope:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Newsreader:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500&family=Karla:wght@400;500&family=Outfit:wght@400;500&family=Prata&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "Selima";
+        src: url("/fonts/Selima.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      :root {
+        --paper: #ffffff;
+        --paper-dim: #f7f6f9;
+        --ink: #440099;
+        --ink-soft: #55505f;
+        --violet-600: #440099;
+        --violet-700: #33007a;
+        --border: #ece8f2;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: -apple-system, "General Sans", sans-serif;
+        padding: 0 0 6rem;
+      }
+
+      .intro {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem 2rem;
+      }
+      .intro h1 {
+        font-family: "General Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 0 0 0.75rem;
+      }
+      .intro p {
+        color: var(--ink-soft);
+        line-height: 1.6;
+        margin: 0 0 1rem;
+      }
+      .intro .note {
+        font-size: 0.85rem;
+        background: var(--paper-dim);
+        border-radius: 8px;
+        padding: 0.9rem 1.1rem;
+      }
+
+      nav.toc {
+        max-width: 46rem;
+        margin: 0 auto 3rem;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+      }
+      nav.toc a {
+        font-family: "General Sans", sans-serif;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--ink-soft);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+      nav.toc a:hover { border-bottom-color: var(--ink-soft); }
+
+      section.role {
+        max-width: 60rem;
+        margin: 0 auto 5rem;
+        padding: 0 1.5rem;
+        scroll-margin-top: 2rem;
+      }
+
+      .role-head {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 0.75rem;
+        margin-bottom: 2rem;
+      }
+      .role-head .kicker {
+        font-family: "General Sans", sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ink-soft);
+      }
+      .role-head h2 {
+        font-family: "General Sans", sans-serif;
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin: 0.25rem 0;
+      }
+      .role-head .used {
+        font-family: "General Sans", sans-serif;
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+      }
+
+      .sample-card {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 2rem 1.75rem;
+        margin-bottom: 1.25rem;
+        background: var(--paper);
+      }
+      .sample-card.current { border: 1.5px solid var(--ink); background: var(--paper-dim); }
+      .sample-card .tag {
+        display: inline-block;
+        font-family: "General Sans", sans-serif;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 0.2rem 0.55rem;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+      }
+      .sample-card.current .tag { background: var(--ink); color: #fff; }
+      .sample-card:not(.current) .tag { background: var(--paper-dim); color: var(--ink-soft); border: 1px solid var(--border); }
+      .sample-card .font-name {
+        font-family: "General Sans", sans-serif;
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+        margin-top: 1rem;
+      }
+
+      /* Rôle 1 — Logo */
+      .logo-sample { line-height: 0.85; }
+      .logo-sample span { display: block; font-size: 3.4rem; color: var(--violet-600); }
+      .logo-sample span + span { margin-top: -0.15em; margin-left: 2.4rem; }
+
+      /* Rôle 2 — Navigation */
+      .nav-sample {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.85rem;
+        color: var(--ink-soft);
+      }
+
+      /* Rôle 3 — Titres */
+      .titre-sample .headline { font-size: 2.1rem; margin: 0 0 1rem; color: var(--ink); }
+      .titre-sample .signature { font-size: 1.35rem; font-style: italic; color: var(--ink); margin: 0; }
+
+      /* Rôle 4 — Texte courant */
+      .body-sample p { font-size: 1.1rem; line-height: 1.7; color: var(--ink-soft); margin: 0; max-width: 42rem; }
+
+      /* Rôle 5 — Titre display sur violet */
+      .panel-sample {
+        background: var(--violet-700);
+        border-radius: 8px;
+        padding: 2.5rem 2rem;
+        text-align: center;
+      }
+      .panel-sample .titre { color: #fff; font-size: 2rem; line-height: 1.2; margin: 0 0 0.9rem; }
+      .panel-sample .chapo { color: #fff; font-size: 1.15rem; line-height: 1.45; margin: 0; opacity: 0.92; max-width: 34rem; margin-inline: auto; }
+      .panel-sample .font-name { color: #d4b8ee; }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Comparatif de polices — page de travail, non liée au site</h1>
+      <p>Les 5 rôles typographiques utilisés sur le site aujourd'hui, chacun avec la police actuelle (encadré violet) suivie de 2-3 alternatives plus chics, rendues avec le vrai texte du site — pas juste leurs noms.</p>
+      <p class="note">Non inclus : Caveat (<code>--font-hand</code>), définie dans la charte mais pas encore utilisée sur le site.</p>
+    </div>
+
+    <nav class="toc">
+      <a href="#logo">1. Logo</a>
+      <a href="#navigation">2. Navigation</a>
+      <a href="#titres">3. Titres</a>
+      <a href="#texte">4. Texte courant</a>
+      <a href="#display">5. Titres sur violet</a>
+    </nav>
+
+    <!-- 1. LOGO -->
+    <section class="role" id="logo">
+      <div class="role-head">
+        <p class="kicker">Rôle 1</p>
+        <h2>Logo — logotype "Anne Leblanc"</h2>
+        <p class="used">Utilisé dans : Header (en-tête du site)</p>
+      </div>
+
+      <div class="sample-card current">
+        <span class="tag">Actuel</span>
+        <div class="logo-sample" style="font-family: 'Selima', cursive;">
+          <span>Anne</span>
+          <span>Leblanc</span>
+        </div>
+        <p class="font-name">Selima — script libre (DaFont), licence 100% gratuite usage commercial inclus</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="logo-sample" style="font-family: 'Pinyon Script', cursive;">
+          <span>Anne</span>
+          <span>Leblanc</span>
+        </div>
+        <p class="font-name">Pinyon Script — script fluide et fin, effet calligraphique élégant</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="logo-sample" style="font-family: 'Parisienne', cursive;">
+          <span>Anne</span>
+          <span>Leblanc</span>
+        </div>
+        <p class="font-name">Parisienne — script rond et raffiné, inspiration lettrage français</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="logo-sample" style="font-family: 'Alex Brush', cursive;">
+          <span>Anne</span>
+          <span>Leblanc</span>
+        </div>
+        <p class="font-name">Alex Brush — script brush plus affirmé, allure éditoriale</p>
+      </div>
+    </section>
+
+    <!-- 2. NAVIGATION -->
+    <section class="role" id="navigation">
+      <div class="role-head">
+        <p class="kicker">Rôle 2</p>
+        <h2>Navigation — onglets du menu</h2>
+        <p class="used">Utilisé dans : Header (onglets desktop et mobile, bouton FR/EN)</p>
+      </div>
+
+      <div class="sample-card current">
+        <span class="tag">Actuel</span>
+        <p class="nav-sample" style="font-family: 'Jost', sans-serif;">
+          <span>Portfolio</span><span>Bio</span><span>Travailler avec Anne</span><span>Contact</span>
+        </p>
+        <p class="font-name">Jost — géométrique, en attente de confirmation vs. alternatives</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <p class="nav-sample" style="font-family: 'Space Grotesk', sans-serif;">
+          <span>Portfolio</span><span>Bio</span><span>Travailler avec Anne</span><span>Contact</span>
+        </p>
+        <p class="font-name">Space Grotesk — géométrique légèrement technique, très lisible en petite taille</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <p class="nav-sample" style="font-family: 'Syne', sans-serif; font-weight: 600;">
+          <span>Portfolio</span><span>Bio</span><span>Travailler avec Anne</span><span>Contact</span>
+        </p>
+        <p class="font-name">Syne — caractère plus marqué, look éditorial/mode</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <p class="nav-sample" style="font-family: 'Manrope', sans-serif;">
+          <span>Portfolio</span><span>Bio</span><span>Travailler avec Anne</span><span>Contact</span>
+        </p>
+        <p class="font-name">Manrope — humaniste et doux, plus chaleureux que Jost</p>
+      </div>
+    </section>
+
+    <!-- 3. TITRES -->
+    <section class="role" id="titres">
+      <div class="role-head">
+        <p class="kicker">Rôle 3</p>
+        <h2>Titres — h1 à h4, signature</h2>
+        <p class="used">Utilisé dans : titres de section, footer, légendes de la grille, CTA final, signature</p>
+      </div>
+
+      <div class="sample-card current titre-sample">
+        <span class="tag">Actuel</span>
+        <p class="headline" style="font-family: 'Fraunces', serif; font-weight: 500;">Envie de voir la suite ?</p>
+        <p class="signature" style="font-family: 'Fraunces', serif; font-weight: 500;">Je dessine les gens pour mieux les regarder.</p>
+        <p class="font-name">Fraunces — remplace Instrument Serif (qui manquait d'italique)</p>
+      </div>
+
+      <div class="sample-card titre-sample">
+        <span class="tag">Alternative</span>
+        <p class="headline" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">Envie de voir la suite ?</p>
+        <p class="signature" style="font-family: 'Cormorant Garamond', serif; font-weight: 600;">Je dessine les gens pour mieux les regarder.</p>
+        <p class="font-name">Cormorant Garamond — serif fin et classique, très raffiné, italique élégante</p>
+      </div>
+
+      <div class="sample-card titre-sample">
+        <span class="tag">Alternative</span>
+        <p class="headline" style="font-family: 'Playfair Display', serif; font-weight: 600;">Envie de voir la suite ?</p>
+        <p class="signature" style="font-family: 'Playfair Display', serif; font-weight: 600;">Je dessine les gens pour mieux les regarder.</p>
+        <p class="font-name">Playfair Display — serif éditorial contrasté, chic et intemporel</p>
+      </div>
+
+      <div class="sample-card titre-sample">
+        <span class="tag">Alternative</span>
+        <p class="headline" style="font-family: 'Newsreader', serif; font-weight: 600;">Envie de voir la suite ?</p>
+        <p class="signature" style="font-family: 'Newsreader', serif; font-weight: 600;">Je dessine les gens pour mieux les regarder.</p>
+        <p class="font-name">Newsreader — serif contemporain façon presse haut de gamme</p>
+      </div>
+    </section>
+
+    <!-- 4. TEXTE COURANT -->
+    <section class="role" id="texte">
+      <div class="role-head">
+        <p class="kicker">Rôle 4</p>
+        <h2>Texte courant — paragraphes</h2>
+        <p class="used">Utilisé dans : bio, texte principal du site</p>
+      </div>
+
+      <div class="sample-card current body-sample">
+        <span class="tag">Actuel</span>
+        <p style="font-family: 'General Sans', sans-serif;">{bio}</p>
+        <p class="font-name">General Sans — choix validé par Anne</p>
+      </div>
+
+      <div class="sample-card body-sample">
+        <span class="tag">Alternative</span>
+        <p style="font-family: 'Work Sans', sans-serif;">{bio}</p>
+        <p class="font-name">Work Sans — humaniste, chaleureux, très lisible en paragraphe long</p>
+      </div>
+
+      <div class="sample-card body-sample">
+        <span class="tag">Alternative</span>
+        <p style="font-family: 'Karla', sans-serif;">{bio}</p>
+        <p class="font-name">Karla — grotesque doux, discret et élégant</p>
+      </div>
+
+      <div class="sample-card body-sample">
+        <span class="tag">Alternative</span>
+        <p style="font-family: 'Outfit', sans-serif;">{bio}</p>
+        <p class="font-name">Outfit — géométrique contemporain, allure plus "studio créatif"</p>
+      </div>
+    </section>
+
+    <!-- 5. TITRES SUR VIOLET -->
+    <section class="role" id="display">
+      <div class="role-head">
+        <p class="kicker">Rôle 5</p>
+        <h2>Titres blancs sur fond violet</h2>
+        <p class="used">Utilisé dans : carrousel d'activités, bande Instagram, chapô d'intro</p>
+      </div>
+
+      <div class="sample-card current">
+        <span class="tag">Actuel</span>
+        <div class="panel-sample">
+          <p class="titre" style="font-family: 'Abril Fatface', serif;">Bande dessinée &amp; illustration</p>
+          <p class="chapo" style="font-family: 'Abril Fatface', serif;">{intro}</p>
+        </div>
+        <p class="font-name">Abril Fatface — remplace Bodoni Moda (qui manquait d'italique)</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="panel-sample">
+          <p class="titre" style="font-family: 'Prata', serif;">Bande dessinée &amp; illustration</p>
+          <p class="chapo" style="font-family: 'Prata', serif;">{intro}</p>
+        </div>
+        <p class="font-name">Prata — display serif fin, plus délicat qu'Abril Fatface</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="panel-sample">
+          <p class="titre" style="font-family: 'Bodoni Moda', serif; font-weight: 500;">Bande dessinée &amp; illustration</p>
+          <p class="chapo" style="font-family: 'Bodoni Moda', serif; font-weight: 500;">{intro}</p>
+        </div>
+        <p class="font-name">Bodoni Moda — contraste fort et haute couture, plus classique</p>
+      </div>
+
+      <div class="sample-card">
+        <span class="tag">Alternative</span>
+        <div class="panel-sample">
+          <p class="titre" style="font-family: 'Libre Caslon Display', serif;">Bande dessinée &amp; illustration</p>
+          <p class="chapo" style="font-family: 'Libre Caslon Display', serif;">{intro}</p>
+        </div>
+        <p class="font-name">Libre Caslon Display — display serif sobre, très éditorial</p>
+      </div>
+    </section>
+  </body>
+</html>

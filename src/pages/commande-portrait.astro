@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PencilStroke from '../components/PencilStroke.astro';
+import PortraitPricingTable from '../components/PortraitPricingTable.astro';
+import CommandePortraitForm from '../components/CommandePortraitForm.astro';
+import FaqAccordion from '../components/FaqAccordion.astro';
+import { useTranslations, getCurrentLang } from '../i18n';
+
+const lang = getCurrentLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const w = t.travailler;
+const prefix = lang === 'en' ? '/en' : '';
+
+// Parcours "commande de portrait" séparé de "Travailler avec Anne" : tarifs fixes,
+// personnalisation, délais, expédition — un visiteur venu pour un événement n'a pas
+// besoin de lire tout ça, et inversement. Le bouton "Passer commande" mène maintenant à un
+// vrai formulaire (Netlify Forms, même mécanisme que le devis événementiel) au lieu d'un
+// mailto — cf. correction-formulaire-commande-portrait.
+const faqCommandes = w.faq.categories.find((c: { nom: string }) => c.nom === 'Commandes personnalisées');
+const commandeChamps = {
+  ...w.portraits.form.champs,
+  consentement: w.devis.champs.consentement,
+  conservation: w.devis.champs.conservation,
+};
+---
+
+<BaseLayout title={`${w.portraits.titre} — Anne Leblanc`} description="Tarifs, personnalisation et commande de portraits personnalisés dessinés à la main par Anne Leblanc.">
+  <section class="mx-auto max-w-2xl px-5 pt-14 text-center md:pt-20">
+    <a href={`${prefix}/travailler-avec-moi`} class="font-nav text-xs uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-violet-600">
+      {w.portraits.retour}
+    </a>
+    <h1 class="mt-5 font-serif text-3xl text-violet-600 md:text-4xl">{w.portraits.titre}</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">{w.portraits.intro}</p>
+    <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-violet-600">{w.portraits.delai}</p>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-10 h-7 w-56 text-violet-600 md:mt-14" />
+
+  <section class="mx-auto max-w-5xl px-5 pt-14 md:pt-16">
+    <div class="grid gap-6 md:grid-cols-3">
+      {w.portraits.formats.map((format: any) => <PortraitPricingTable format={format} />)}
+    </div>
+    <p class="mt-6 text-center text-sm text-ink-soft">{w.portraits.audela}</p>
+
+    <div class="mt-12 flex justify-center">
+      <a
+        href="#commande"
+        class="rounded-full bg-violet-600 px-10 py-4 text-base font-medium text-paper shadow-md transition-colors hover:bg-violet-700"
+      >
+        {w.portraits.ctaCommander}
+      </a>
+    </div>
+
+    <div class="mx-auto mt-14 max-w-3xl space-y-10">
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.personnalisation.titre}</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">{w.portraits.personnalisation.texte}</p>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">{w.portraits.personnalisation.texte2}</p>
+        <p class="mt-4 text-sm text-violet-600">{w.portraits.personnalisation.exemplesTitre}</p>
+        <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-soft">
+          {w.portraits.personnalisation.exemples.map((ex: string) => <li>{ex}</li>)}
+        </ul>
+        <p class="mt-3 text-sm italic text-ink-soft">{w.portraits.personnalisation.note}</p>
+      </div>
+
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.urgence.titre}</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">{w.portraits.urgence.texte}</p>
+        <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-soft">
+          {w.portraits.urgence.exemples.map((ex: string) => <li>{ex}</li>)}
+        </ul>
+        <p class="mt-3 text-sm italic text-ink-soft">{w.portraits.urgence.note}</p>
+      </div>
+
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.expedition.titre}</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">{w.portraits.expedition.texte}</p>
+      </div>
+
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.commander.titre}</h3>
+        <p class="mt-3 text-sm text-ink-soft">{w.portraits.commander.intro}</p>
+        <ol class="mt-2 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-ink-soft">
+          {w.portraits.commander.items.map((item: string) => <li>{item}</li>)}
+        </ol>
+      </div>
+
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.avantDeCommander.titre}</h3>
+        <div class="mt-3 space-y-4">
+          {w.portraits.avantDeCommander.items.map((item: { titre: string; texte: string }) => (
+            <p class="text-sm leading-relaxed text-ink-soft"><span class="font-medium text-violet-600">{item.titre}</span> {item.texte}</p>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-serif text-lg text-violet-600">{w.portraits.projetsParticuliers.titre}</h3>
+        <p class="mt-3 text-sm leading-relaxed text-ink-soft">{w.portraits.projetsParticuliers.texte}</p>
+      </div>
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 -scale-x-100 text-violet-600 md:mt-16" />
+
+  <!-- Formulaire de commande -->
+  <section id="commande" class="mx-auto max-w-3xl scroll-mt-24 px-5 pt-14 md:pt-16">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.portraits.form.titre}</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-base leading-relaxed text-ink-soft">{w.portraits.form.texte}</p>
+
+    <div class="mt-10">
+      <CommandePortraitForm
+        champs={commandeChamps}
+        confirmationTitre={w.portraits.form.confirmationTitre}
+        confirmation={w.portraits.form.confirmation}
+        erreur={w.portraits.form.erreur}
+        contactEmail={t.meta.contactEmail}
+      />
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 text-violet-600 md:mt-16" />
+
+  <!-- FAQ dédiée aux commandes de portraits -->
+  <section class="mx-auto max-w-3xl px-5 pb-20 pt-14 md:pt-16">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.faq.titre}</h2>
+    <div class="mt-10">
+      <FaqAccordion categories={[faqCommandes]} />
+    </div>
+  </section>
+</BaseLayout>
