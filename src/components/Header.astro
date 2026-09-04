@@ -22,12 +22,12 @@ const allNav = [{ href: `${prefix}/`, label: t.nav.accueil }, ...leftNav, ...rig
 const frHref = getLocalizedPath(Astro.url.pathname, 'fr');
 const enHref = getLocalizedPath(Astro.url.pathname, 'en');
 
-const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-violet-600';
+const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft transition-colors hover:text-violet-600';
 ---
 
 <header class="sticky top-0 z-50 border-b border-ink/10 bg-paper/95 backdrop-blur">
   <div class="mx-auto grid h-24 max-w-7xl grid-cols-[1fr_auto] items-center gap-4 px-5 md:h-36 md:grid-cols-[1fr_auto_1fr]">
-    <nav class="hidden items-center gap-10 md:flex lg:gap-12">
+    <nav class="hidden items-center gap-6 md:flex lg:gap-8">
       {leftNav.map((item) => {
         const words = item.label.split(' ');
         const isTwoLine = item.href.endsWith('/travailler-avec-moi') || item.href.endsWith('/commande-portrait');
@@ -51,7 +51,7 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
         loading="eager"
         width={218}
         height={101}
-        class="pointer-events-none absolute left-[-46%] top-[3%] z-0 hidden h-auto w-[66%] max-w-none min-[1152px]:block"
+        class="pointer-events-none absolute left-[-62%] top-[3%] z-0 hidden h-auto w-[82%] max-w-none min-[1152px]:block"
       />
       <Image
         src={liseretLeblanc}
@@ -60,7 +60,7 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
         loading="eager"
         width={344}
         height={148}
-        class="pointer-events-none absolute left-[61%] top-[-18%] z-0 hidden h-auto w-[105%] max-w-none min-[1152px]:block"
+        class="pointer-events-none absolute left-[61%] top-[-18%] z-0 hidden h-auto w-[129%] max-w-none min-[1152px]:block"
       />
       <span
         class="relative z-10 inline-block font-logo text-4xl text-violet-600 sm:text-5xl md:text-6xl"
@@ -69,8 +69,8 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft tra
       <span class="relative z-10 -mt-4 ml-8 block font-logo text-4xl text-violet-600 sm:-mt-5 sm:ml-10 sm:text-5xl md:-mt-6 md:ml-14 md:text-6xl">Leblanc</span>
     </a>
 
-    <div class="flex items-center justify-end gap-5">
-      <nav class="hidden items-center gap-7 md:flex">
+    <div class="flex items-center justify-end gap-2">
+      <nav class="hidden items-center gap-4 md:flex">
         {rightNav.map((item) => (
           <a href={item.href} class={navClass}>{item.label}</a>
         ))}
