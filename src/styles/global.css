@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette — blanc net, violet Pantone Violet C, jaune Pantone Yellow C */
+  --color-paper: #ffffff;
+  --color-paper-dim: #f5f5f5;
+  --color-ink: #440099; /* violet foncé Pantone Violet C — remplace le noir sur fonds blanc/jaune */
+  --color-ink-soft: #55505f;
+
+  --color-violet-50: #f3ebfb;
+  --color-violet-200: #d4b8ee;
+  --color-violet-400: #8a4fd1;
+  --color-violet-600: #440099;
+  --color-violet-700: #33007a;
+  --color-violet-900: #200050;
+
+  --color-yellow-400: #ffe94d;
+  --color-yellow-500: #fedd00;
+  --color-yellow-600: #d9bc00;
+
+  /* Typographie — système de polices définitif (site entier, pas seulement la home) */
+  --font-serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif; /* titres génériques (h1-h4, footer, légendes grille, CTA) */
+  --font-sans: "General Sans", "Helvetica Neue", Arial, sans-serif; /* texte courant, site entier */
+  --font-display: "Bodoni Moda", "Times New Roman", serif; /* titres blancs sur violet (panneaux des activités, bande Instagram) */
+  --font-signature: "Playfair Display", "Iowan Old Style", "Palatino Linotype", serif; /* titre "Je dessine les gens pour mieux les regarder" — sans italique */
+  --font-logo: "Selima", cursive; /* logotype "Anne Leblanc" — choix définitif d'Anne, licence 100% gratuite (usage commercial inclus) */
+  --font-nav: "Manrope", sans-serif; /* onglets de navigation */
+  --font-hand: "Caveat", cursive;
+}
+
+@font-face {
+  font-family: "Selima";
+  src: url("/fonts/Selima.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}

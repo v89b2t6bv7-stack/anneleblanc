@@ -1,0 +1,98 @@
+---
+// Page de travail temporaire — comparatif de polices, pas liée dans la navigation, pas destinée à la mise en ligne finale.
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test polices — Anne Leblanc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Jost:wght@500;600&family=Poppins:wght@500;600&family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Selima";
+        src: url("/fonts/Selima.ttf") format("truetype");
+        font-display: swap;
+      }
+    </style>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #ffffff; color: #1c1a22; font-family: system-ui, sans-serif; padding: 3rem 1.5rem 6rem; }
+      h1 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #55505f; margin-bottom: 2.5rem; }
+      h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; color: #55505f; margin: 4rem 0 1.5rem; border-top: 1px solid #eee; padding-top: 2rem; }
+      h2 .done { color: #218838; text-transform: none; letter-spacing: 0; font-weight: 700; }
+      .wordmark-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .card { border: 1px solid #eee; border-radius: 8px; padding: 2rem 1.5rem; text-align: center; }
+      .card .label { margin-top: 1rem; font-size: 0.8rem; color: #888; }
+      .duo { border: 1px solid #eee; border-radius: 8px; padding: 2.5rem 2rem; margin-bottom: 2rem; }
+      .duo .headline { font-size: 2rem; margin: 0 0 1rem; }
+      .duo .body { max-width: 40rem; line-height: 1.6; color: #333; }
+      .duo .label { margin-top: 1.5rem; font-size: 0.8rem; color: #888; }
+      .panel-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .panel { background: #33007a; border-radius: 8px; padding: 3rem 1.5rem; text-align: center; }
+      .panel .sample { color: #ffffff; font-size: 2rem; line-height: 1.25; }
+      .panel .label { margin-top: 1rem; font-size: 0.8rem; color: #d4b8ee; }
+      .logo-diag { position: relative; display: inline-block; line-height: 0.8; }
+      .logo-diag span { display: block; color: #440099; font-size: 3rem; }
+      .logo-diag span + span { margin-top: -0.4em; margin-left: 2.2rem; }
+      .nav-sample { display: flex; gap: 2.5rem; justify-content: center; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.85rem; color: #1c1a22; }
+    </style>
+  </head>
+  <body>
+    <h1>Comparatif — page de travail, non liée au site</h1>
+
+    <h2>1. Logo "Anne Leblanc" — <span class="done">✓ choisi : Selima</span></h2>
+    <div class="wordmark-grid">
+      <div class="card">
+        <div class="logo-diag" style="font-family: 'Selima', cursive; font-style: italic;">
+          <span>Anne</span>
+          <span>Leblanc</span>
+        </div>
+        <p class="label">Selima (DaFont, Jroh Creative) — 100% gratuite, usage commercial inclus. Utilisée sur le site.</p>
+      </div>
+    </div>
+
+    <h2>2. Duo titres / texte courant — <span class="done">✓ choisi : Instrument Serif + General Sans</span></h2>
+    <div class="duo">
+      <p class="headline" style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 2.3rem;">Je dessine les gens pour mieux les regarder.</p>
+      <p class="body" style="font-family: 'General Sans', sans-serif;">
+        Anne aborde des inconnus dans la rue pour les dessiner sur le vif, dessine des artistes en direct sur scène,
+        et transforme des idées de sociologie en petites bandes dessinées. Elle n'utilise pas le dessin pour
+        « bien dessiner » : elle l'utilise pour créer des rencontres et rendre visibles des idées qu'on ne regarde
+        jamais d'assez près.
+      </p>
+      <p class="label">Instrument Serif (titres, site entier) + General Sans (texte courant, site entier)</p>
+    </div>
+
+    <h2>3. Titre blanc sur panneau violet — <span class="done">✓ choisi : Bodoni Moda</span></h2>
+    <div class="panel-grid">
+      <div class="panel">
+        <p class="sample" style="font-family: 'Bodoni Moda', serif; font-weight: 500;">Dessin en direct</p>
+        <p class="label">Bodoni Moda — utilisé sur le carrousel et la bande Instagram</p>
+      </div>
+    </div>
+
+    <h2>4. Onglets de navigation — sans-serif géométrique, majuscules, espacé</h2>
+    <div class="wordmark-grid">
+      <div class="card">
+        <p class="nav-sample" style="font-family: 'Jost', sans-serif;">Portfolio Bio Contact</p>
+        <p class="label">Jost — utilisé sur le site actuellement</p>
+      </div>
+      <div class="card">
+        <p class="nav-sample" style="font-family: 'Poppins', sans-serif;">Portfolio Bio Contact</p>
+        <p class="label">Poppins</p>
+      </div>
+      <div class="card">
+        <p class="nav-sample" style="font-family: 'Montserrat', sans-serif;">Portfolio Bio Contact</p>
+        <p class="label">Montserrat</p>
+      </div>
+    </div>
+  </body>
+</html>

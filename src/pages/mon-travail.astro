@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PencilStroke from '../components/PencilStroke.astro';
+import CategoryTile from '../components/CategoryTile.astro';
+import { useTranslations, getCurrentLang } from '../i18n';
+import type { ImageMetadata } from 'astro';
+
+const lang = getCurrentLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const p = t.portfolio;
+const prefix = lang === 'en' ? '/en' : '';
+
+function firstImage(pattern: string): ImageMetadata {
+  const modules = import.meta.glob<{ default: ImageMetadata }>(
+    '../assets/images/portfolio/**/*.{jpg,jpeg,png}',
+    { eager: true }
+  );
+  const key = Object.keys(modules)
+    .filter((k) => k.includes(pattern))
+    .sort()[0];
+  return modules[key].default;
+}
+
+const covers: Record<string, ImageMetadata> = {
+  'dessin-live': firstImage('/dessin-live/'),
+  'collaboration-creation-contenu': firstImage('/collaboration-creation-contenu/'),
+  'bd-et-illustrations': firstImage('/bd-et-illustrations/'),
+  carnet: firstImage('/carnet/'),
+};
+
+const tileColors: Record<string, 'violet' | 'yellow'> = {
+  'dessin-live': 'violet',
+  'collaboration-creation-contenu': 'yellow',
+  'bd-et-illustrations': 'violet',
+  carnet: 'yellow',
+};
+---
+
+<BaseLayout title="Portfolio — Anne Leblanc" description="Portraits, personnes dessinées, BD et illustrations, collaborations et carnet — le travail d'Anne Leblanc, dessinatrice.">
+  <!-- Intro -->
+  <section class="mx-auto max-w-3xl px-5 pt-14 text-center md:pt-20">
+    <h1 class="font-serif text-3xl text-violet-600 md:text-4xl">{p.titre}</h1>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 text-violet-600 md:mt-16" />
+
+  <!-- Grille des 5 catégories -->
+  <section class="mx-auto max-w-6xl px-5 py-14 md:py-16">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+      {p.categories.map((c: { slug: string; titre: string }) => (
+        <CategoryTile
+          href={`${prefix}/mon-travail/${c.slug}`}
+          titre={c.titre}
+          image={covers[c.slug]}
+          color={tileColors[c.slug]}
+        />
+      ))}
+    </div>
+  </section>
+
+  <!-- Bloc contact pleine largeur, dans l'esprit de la référence Connie Lim -->
+  <section class="bg-violet-600 py-16 md:py-20">
+    <div class="mx-auto max-w-2xl px-5 text-center">
+      <h2 class="font-display text-2xl uppercase leading-snug text-paper md:text-3xl">{p.ctaTitre}</h2>
+      <p class="mx-auto mt-6 max-w-xl text-base leading-relaxed text-paper/90">{p.ctaTexte}</p>
+      <a
+        href={`${prefix}/contact`}
+        class="mt-8 inline-block rounded-full bg-yellow-500 px-7 py-3 text-sm text-violet-700 transition-colors hover:bg-yellow-400"
+      >
+        {p.ctaBouton} →
+      </a>
+    </div>
+  </section>
+</BaseLayout>

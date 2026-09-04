@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PencilStroke from '../../components/PencilStroke.astro';
+import DevisForm from '../../components/DevisForm.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import FloatingDevisButton from '../../components/FloatingDevisButton.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { useTranslations, getCurrentLang } from '../../i18n';
+
+import imgDessinDirect from '../../assets/images/accueil/activites/dessin-direct-anne-en-action.jpg';
+import imgWia from '../../assets/images/accueil/carreaux14/wia-young-avec-anne.jpg';
+import imgCongres from '../../assets/images/accueil/carreaux14/congres-anne-dessine.jpg';
+import imgAmazon from '../../assets/images/accueil/grille/collaborations-amazon-prime-eric-ramzy.jpg';
+import imgMarche from '../../assets/images/travailler/marche-des-arts-portraits-clients.jpg';
+import imgDemaarse from '../../assets/images/accueil/grille/soiree-demaarse.jpg';
+import imgLeopold from '../../assets/images/accueil/carreaux14/leopold-europeen-scene.jpg';
+import imgThreeman from '../../assets/images/accueil/carreaux14/avignon-threeman-show.jpg';
+
+const lang = getCurrentLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const w = t.travailler;
+const prefix = lang === 'en' ? '/en' : '';
+
+// Cette page ne couvre plus que le parcours "prestations sur devis" (dessin live,
+// collaborations, vidéo) — la commande de portrait personnalisé (tarifs fixes A5/A4/A3
+// et tout ce qui l'accompagne) a sa propre page /commande-portrait, pour ne pas mélanger
+// deux parcours de visiteurs très différents. La catégorie FAQ "Commandes personnalisées"
+// part avec elle.
+const faqCategories = w.faq.categories.filter((c: { nom: string }) => c.nom !== 'Commandes personnalisées');
+
+// Galerie d'événements déjà réalisés : un média par événement, dans le même ordre que
+// travailler.galeries.items (fr.json/en.json). Le 7e événement (Théâtre de l'Européen) réutilise
+// l'image "leopold-europeen-scene.jpg" déjà utilisée sur la home, et le 8e (Festival d'Avignon)
+// réutilise "avignon-threeman-show.jpg" — pas de nouveau dossier photo. Le Stunfest est illustré
+// par une vidéo (portrait, filmée au téléphone) plutôt qu'une photo : même cadre aspect-[4/3]
+// que les photos pour une grille homogène, avec object-position décalé vers le bas
+// (object-[50%_62%]) pour garder la main qui dessine et le carnet visibles plutôt que
+// de centrer sur le visage.
+const evenementMedia: ({ type: 'image'; src: ImageMetadata } | { type: 'video'; src: string })[] = [
+  { type: 'image', src: imgWia },
+  { type: 'image', src: imgCongres },
+  { type: 'image', src: imgAmazon },
+  { type: 'video', src: '/videos/stunfest-galerie.mp4' },
+  { type: 'image', src: imgMarche },
+  { type: 'image', src: imgDemaarse },
+  { type: 'image', src: imgLeopold },
+  { type: 'image', src: imgThreeman },
+];
+const evenements = w.galeries.items.map((item: { titre: string; texte: string; annee: string; lieu: string }, i: number) => ({
+  ...item,
+  media: evenementMedia[i],
+}));
+---
+
+<BaseLayout title="Travailler avec Anne — Anne Leblanc" description="Dessin live pour événements et marques, projets artistiques sur mesure et collaborations.">
+  <!-- Intro / accroche : 2 colonnes sur desktop (texte à gauche, photo à droite) pour
+       remplir la largeur plutôt qu'empiler un bloc centré — empilé simplement sur mobile. -->
+  <section class="mx-auto max-w-5xl px-5 pt-14 md:pt-20">
+    <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 lg:gap-16">
+      <div class="text-center md:text-left">
+        <h1 class="font-serif text-3xl text-violet-600 md:text-4xl">{w.intro.titre}</h1>
+        <p class="font-signature mt-3 text-xl leading-relaxed text-violet-600 md:text-2xl">{w.intro.texte}</p>
+        <a href={`${prefix}/commande-portrait`} class="mt-4 inline-block text-sm text-violet-600 underline decoration-violet-300 underline-offset-4 transition-colors hover:text-violet-700">
+          {w.intro.lienPortrait}
+        </a>
+      </div>
+      <div class="mx-auto mt-8 max-w-sm md:mx-0 md:mt-0 md:max-w-none">
+        <Image
+          src={imgDessinDirect}
+          alt="Anne dessine un participant en direct lors d'un événement"
+          widths={[400, 700, 1000]}
+          sizes="(min-width: 768px) 45vw, 90vw"
+          class="aspect-[4/5] w-full rounded-md object-cover md:aspect-[4/3]"
+        />
+      </div>
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-8 h-7 w-56 text-violet-600 md:mt-10" />
+
+  <!-- Prestations sur devis -->
+  <section class="mx-auto max-w-5xl px-5 pt-8 md:pt-10">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.prestations.titre}</h2>
+
+    <div class="mt-8 grid gap-6 md:grid-cols-3">
+      {w.prestations.familles.map((famille: { titre: string; texte: string }) => (
+        <div class="rounded-lg border border-ink/10 bg-paper-dim p-6">
+          <h3 class="font-serif text-lg text-violet-600">{famille.titre}</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-soft">{famille.texte}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="mx-auto mt-10 max-w-2xl text-center text-base leading-relaxed text-violet-600">
+      {w.prestations.reseauxSociaux}
+    </p>
+
+    <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a href="#devis" class="rounded-full bg-violet-600 px-7 py-3 text-sm text-paper transition-colors hover:bg-violet-700">
+        {w.prestations.ctaDevis}
+      </a>
+      <a href="#faq" class="rounded-full border border-violet-600/30 px-7 py-3 text-sm text-violet-600 transition-colors hover:border-violet-600">
+        {w.prestations.ctaFaq}
+      </a>
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 -scale-x-100 text-violet-600 md:mt-16" />
+
+  <!-- Formulaire de devis -->
+  <section id="devis" class="mx-auto max-w-3xl scroll-mt-24 px-5 pt-14 md:pt-16">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.devis.titre}</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-base leading-relaxed text-ink-soft">{w.devis.texte}</p>
+
+    <div class="mt-10">
+      <DevisForm champs={w.devis.champs} confirmationTitre={w.devis.confirmationTitre} confirmation={w.devis.confirmation} erreur={w.devis.erreur} contactEmail={t.meta.contactEmail} />
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 text-violet-600 md:mt-16" />
+
+  <!-- Galeries d'événements déjà réalisés -->
+  <section class="mx-auto max-w-5xl px-5 pt-14 md:pt-16">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.galeries.titre}</h2>
+    <p class="mx-auto mt-3 max-w-xl text-center text-base text-ink-soft">{w.galeries.texte}</p>
+
+    <div class="mt-10 grid gap-x-8 gap-y-10 md:grid-cols-2">
+      {evenements.map((ev) => (
+        <div>
+          <div class="aspect-[4/3] overflow-hidden rounded-md bg-paper-dim">
+            {ev.media.type === 'video' ? (
+              <video class="h-full w-full object-cover object-[50%_62%]" autoplay loop muted playsinline>
+                <source src={ev.media.src} type="video/mp4" />
+              </video>
+            ) : (
+              <Image
+                src={ev.media.src}
+                alt={ev.titre}
+                widths={[400, 700, 1000]}
+                sizes="(min-width: 768px) 45vw, 90vw"
+                class="h-full w-full object-cover"
+              />
+            )}
+          </div>
+          <div class="mt-4">
+            <p class="font-serif text-lg text-violet-600">{ev.titre}</p>
+            <p class="mt-0.5 text-xs uppercase tracking-[0.1em] text-ink-soft">{ev.annee} — {ev.lieu}</p>
+            <p class="mt-2 text-sm leading-relaxed text-ink-soft">{ev.texte}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <PencilStroke variant="ligne" class="mx-auto mt-14 h-7 w-56 text-violet-600 md:mt-16" />
+
+  <!-- FAQ -->
+  <section id="faq" class="mx-auto max-w-3xl scroll-mt-24 px-5 pb-20 pt-14 md:pt-16">
+    <h2 class="text-center text-2xl text-violet-600 md:text-3xl">{w.faq.titre}</h2>
+
+    <div class="mt-10">
+      <FaqAccordion categories={faqCategories} />
+    </div>
+
+    <div class="mt-14 rounded-lg border border-violet-200 bg-violet-50 p-6 text-center">
+      <h3 class="font-serif text-lg text-violet-600">{w.faq.autre.titre}</h3>
+      <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-ink-soft">{w.faq.autre.texte}</p>
+      <a href="#devis" class="mt-6 inline-block rounded-full bg-violet-600 px-7 py-3 text-sm text-paper transition-colors hover:bg-violet-700">
+        {w.prestations.ctaDevis} →
+      </a>
+    </div>
+  </section>
+
+  <FloatingDevisButton label={w.devis.titre} labelCourt={w.devis.titreCourt} />
+</BaseLayout>
