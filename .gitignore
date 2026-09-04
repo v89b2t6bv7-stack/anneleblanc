@@ -25,6 +25,3 @@ pnpm-debug.log*
 
 # backup kept locally only, not needed in the repo
 scripts/_backup-before-crop/
-
-# temporarily excluded: connexion trop lente pour pousser ces gros fichiers d'un coup, à réessayer/traiter à part
-public/videos/
