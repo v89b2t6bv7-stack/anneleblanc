@@ -1,0 +1,42 @@
+---
+// Bouton "Demander un devis" flottant, uniquement sur la page "Travailler avec Anne" —
+// reste accessible pendant tout le scroll (tarifs, événements, FAQ), et s'efface quand
+// la section #devis (le vrai formulaire) est déjà visible, pour ne pas faire doublon.
+interface Props {
+  label: string;
+  labelCourt: string;
+}
+const { label, labelCourt } = Astro.props;
+---
+
+<a
+  href="#devis"
+  id="floating-devis-btn"
+  class="fixed bottom-5 right-5 z-40 rounded-full bg-violet-600 px-5 py-3 text-sm text-paper shadow-lg transition-opacity duration-300 hover:bg-violet-700 md:bottom-6 md:right-6 md:px-7"
+>
+  <span class="sm:hidden">{labelCourt} →</span>
+  <span class="hidden sm:inline">{label} →</span>
+</a>
+
+<script>
+  const btn = document.getElementById('floating-devis-btn');
+  const target = document.getElementById('devis');
+
+  if (btn && target) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    const setVisible = (visible: boolean) => {
+      btn.style.opacity = visible ? '1' : '0';
+      btn.style.pointerEvents = visible ? 'auto' : 'none';
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setVisible(!entry.isIntersecting),
+      { threshold: 0.15 }
+    );
+    observer.observe(target);
+  }
+</script>

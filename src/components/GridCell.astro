@@ -1,0 +1,32 @@
+---
+interface Props {
+  titre: string;
+  legende: string;
+  color?: 'violet' | 'yellow';
+  href?: string;
+}
+const { titre, legende, color = 'violet', href } = Astro.props;
+
+const overlayBg = color === 'violet' ? 'bg-violet-600/85' : 'bg-yellow-500/90';
+const overlayText = color === 'violet' ? 'text-paper' : 'text-ink';
+const overlaySubtext = color === 'violet' ? 'text-paper/90' : 'text-ink/80';
+const Wrapper = href ? 'a' : 'div';
+const wrapperProps = href ? { href, target: '_blank', rel: 'noopener noreferrer' } : {};
+---
+
+<Wrapper class="group relative aspect-square overflow-hidden bg-paper-dim" {...wrapperProps}>
+  <slot />
+
+  <!-- Label discret, toujours visible -->
+  <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/70 to-transparent p-4 transition-opacity duration-300 group-hover:opacity-0">
+    <p class="font-serif text-sm text-paper">{titre}</p>
+  </div>
+
+  <!-- Voile au survol (violet ou jaune selon la case) -->
+  <div class={`pointer-events-none absolute inset-0 flex items-center justify-center ${overlayBg} p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
+    <div>
+      <p class={`font-serif text-lg ${overlayText}`}>{titre}</p>
+      <p class={`mt-2 text-sm ${overlaySubtext}`}>{legende}</p>
+    </div>
+  </div>
+</Wrapper>

@@ -1,0 +1,39 @@
+---
+// Tuile cliquable de la grille "Portfolio" (page d'entrée /mon-travail) — inspirée de la
+// disposition Connie Lim (grandes tuiles image + titre en surimpression), mais avec le
+// traitement au survol déjà en place sur la grille des 16 carreaux de la home (voile
+// violet/jaune en alternance) plutôt que le style neutre de la référence.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  href: string;
+  titre: string;
+  image: ImageMetadata;
+  color?: 'violet' | 'yellow';
+}
+const { href, titre, image, color = 'violet' } = Astro.props;
+
+const overlayBg = color === 'violet' ? 'bg-violet-600/85' : 'bg-yellow-500/90';
+const overlayText = color === 'violet' ? 'text-paper' : 'text-ink';
+---
+
+<a href={href} class="group relative block aspect-[4/5] overflow-hidden rounded-md bg-paper-dim shadow-sm sm:aspect-[3/4]">
+  <Image
+    src={image}
+    alt={titre}
+    widths={[400, 700, 1000]}
+    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 90vw"
+    class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+  />
+
+  <!-- Label discret, toujours visible -->
+  <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-5 transition-opacity duration-300 group-hover:opacity-0">
+    <p class="font-serif text-xl text-paper md:text-2xl">{titre}</p>
+  </div>
+
+  <!-- Voile au survol (violet ou jaune selon la tuile) -->
+  <div class={`pointer-events-none absolute inset-0 flex items-center justify-center ${overlayBg} p-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100`}>
+    <p class={`font-serif text-2xl ${overlayText} md:text-3xl`}>{titre}</p>
+  </div>
+</a>

@@ -1,0 +1,122 @@
+---
+// Galerie en colonnes (masonry) : les images gardent leur format d'origine plutôt que
+// d'être recadrées en carré, pour ne jamais rogner un dessin ou un scan. Variante "carnet"
+// = rendu plus brut, pages posées légèrement de travers, comme un vrai carnet feuilleté.
+//
+// Chaque vignette ouvre une lightbox plein écran au clic (image affichée en grand, sans
+// déformation, navigable au clavier/flèches) — une seule instance de lightbox par galerie,
+// pilotée par un petit script vanilla (pas de framework UI dans ce projet).
+import { Image, getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  images: ImageMetadata[];
+  altBase: string;
+  variant?: 'galerie' | 'carnet' | 'duo';
+}
+const { images, altBase, variant = 'galerie' } = Astro.props;
+const isCarnet = variant === 'carnet';
+const rotations = ['-rotate-2', 'rotate-1', 'rotate-0', 'rotate-2', '-rotate-1', 'rotate-0'];
+
+// "duo" : chaque photo montre déjà le modèle avec son portrait en main (photo + dessin
+// dans un seul et même cliché) — on l'affiche donc plus grande, sur 2 colonnes maximum,
+// plutôt que dans la mosaïque serrée à 4 colonnes, pour que la paire se lise bien.
+const columnsClass = variant === 'duo' ? 'columns-1 gap-4 sm:columns-2 md:gap-6' : 'columns-2 gap-3 sm:columns-3 md:gap-4 lg:columns-4';
+
+// Version haute résolution de chaque image, pour la lightbox (plus grande que les
+// vignettes de la mosaïque, plafonnée à la largeur réelle du fichier source).
+const fullImages = await Promise.all(
+  images.map((img) => getImage({ src: img, width: Math.min(img.width, 1600) }))
+);
+---
+
+<div class={columnsClass} data-gallery>
+  {images.map((img, i) => (
+    <div class={`mb-3 break-inside-avoid md:mb-4 ${isCarnet ? `${rotations[i % rotations.length]} border-[6px] border-paper bg-paper shadow-md` : 'overflow-hidden rounded-md bg-paper-dim shadow-sm'}`}>
+      <button
+        type="button"
+        class="block w-full cursor-zoom-in"
+        data-lightbox-trigger
+        data-full={fullImages[i].src}
+        data-alt={`${altBase} — ${i + 1}`}
+        aria-label={`Agrandir : ${altBase} — ${i + 1}`}
+      >
+        <Image
+          src={img}
+          alt={`${altBase} — ${i + 1}`}
+          widths={[300, 500, 800]}
+          sizes="(min-width: 1024px) 23vw, (min-width: 640px) 31vw, 47vw"
+          class={isCarnet ? 'w-full' : 'w-full rounded-md object-cover'}
+          loading={i < 6 ? 'eager' : 'lazy'}
+        />
+      </button>
+    </div>
+  ))}
+</div>
+
+<div data-lightbox class="fixed inset-0 z-[100] hidden items-center justify-center bg-ink/90 p-4 md:p-10" role="dialog" aria-modal="true">
+  <button type="button" data-lightbox-close aria-label="Fermer" class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-paper/90 text-xl leading-none text-ink transition-colors hover:bg-paper md:right-6 md:top-6">×</button>
+
+  <button type="button" data-lightbox-prev aria-label="Image précédente" class="absolute left-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-paper/80 text-ink transition-colors hover:bg-paper md:left-6">‹</button>
+  <button type="button" data-lightbox-next aria-label="Image suivante" class="absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-paper/80 text-ink transition-colors hover:bg-paper md:right-6">›</button>
+
+  <img data-lightbox-img src="" alt="" class="max-h-full max-w-full rounded-sm object-contain shadow-2xl" />
+</div>
+
+<script>
+  function initGalleryLightbox(root: ParentNode) {
+    const lightbox = root.querySelector('[data-lightbox]') as HTMLElement | null;
+    if (!lightbox) return;
+    const img = lightbox.querySelector('[data-lightbox-img]') as HTMLImageElement;
+    const closeBtn = lightbox.querySelector('[data-lightbox-close]') as HTMLButtonElement;
+    const prevBtn = lightbox.querySelector('[data-lightbox-prev]') as HTMLButtonElement;
+    const nextBtn = lightbox.querySelector('[data-lightbox-next]') as HTMLButtonElement;
+    const triggers = Array.from(root.querySelectorAll('[data-lightbox-trigger]')) as HTMLButtonElement[];
+    if (!triggers.length) return;
+
+    let current = 0;
+
+    function show(index: number) {
+      current = (index + triggers.length) % triggers.length;
+      const t = triggers[current];
+      img.src = t.dataset.full || '';
+      img.alt = t.dataset.alt || '';
+    }
+
+    function open(index: number) {
+      show(index);
+      lightbox!.classList.remove('hidden');
+      lightbox!.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function close() {
+      lightbox!.classList.add('hidden');
+      lightbox!.classList.remove('flex');
+      document.body.style.overflow = '';
+      img.src = '';
+    }
+
+    triggers.forEach((t, i) => t.addEventListener('click', () => open(i)));
+    closeBtn.addEventListener('click', close);
+    prevBtn.addEventListener('click', () => show(current - 1));
+    nextBtn.addEventListener('click', () => show(current + 1));
+
+    lightbox!.addEventListener('click', (e) => {
+      if (e.target === lightbox) close();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (lightbox!.classList.contains('hidden')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+  }
+
+  document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+    const container = gallery.parentElement;
+    if (container) initGalleryLightbox(container);
+  });
+</script>

@@ -1,0 +1,42 @@
+---
+// Trait à main levée façon crayon/craie — asset réel (src/assets/images/traits/
+// trait-crayon-ondule.png, recolorisé en jaune dans trait-crayon-ondule-jaune.png),
+// réutilisé partout sur le site comme motif de transition entre sections.
+//
+// Affiché en <img> classique avec object-contain : proportions d'origine préservées
+// (pas étiré, pas aplati en bloc de couleur). Le fichier source est un scan opaque
+// (fond blanc, trait sombre, sans canal alpha exploitable) — une tentative précédente
+// de le teinter via un masque CSS (currentColor + mask-image) échouait silencieusement
+// dans certains contextes et retombait sur un simple rectangle plein. La version
+// recolorée a une vraie transparence (alpha dérivé de la luminosité du scan, avec une
+// marge ajoutée avant dilatation pour ne jamais couper le haut des boucles ou le bas
+// des vagues) et une couleur figée dans les pixels, donc plus de dépendance au support
+// de `mask-image` par le navigateur.
+import { Image } from 'astro:assets';
+import traitViolet from '../assets/images/traits/trait-crayon-ondule-violet.png';
+import traitJaune from '../assets/images/traits/trait-crayon-ondule-jaune.png';
+
+interface Props {
+  variant?: 'ligne' | 'taper-gauche' | 'taper-droite';
+  color?: 'violet' | 'yellow';
+  class?: string;
+}
+const { variant = 'ligne', color = 'yellow', class: className = '' } = Astro.props;
+
+const trait = color === 'yellow' ? traitJaune : traitViolet;
+
+// L'asset est naturellement épais à gauche et s'amenuise vers la droite :
+// ça correspond tel quel à "ligne" et "taper-gauche" ; "taper-droite" le retourne
+// pour amener l'épaisseur vers l'extérieur droit.
+const flip = variant === 'taper-droite';
+---
+
+<Image
+  src={trait}
+  alt=""
+  aria-hidden="true"
+  loading="eager"
+  width={700}
+  height={62}
+  class={`block object-contain ${flip ? '-scale-x-100' : ''} ${className}`}
+/>

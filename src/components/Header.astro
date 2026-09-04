@@ -1,0 +1,129 @@
+---
+import { Image } from 'astro:assets';
+import { useTranslations, getCurrentLang, getLocalizedPath } from '../i18n';
+import liseretAnne from '../assets/images/header/liseret-anne.png';
+import liseretLeblanc from '../assets/images/header/liseret-leblanc.png';
+
+const lang = getCurrentLang(Astro.url.pathname);
+const t = useTranslations(lang);
+const prefix = lang === 'en' ? '/en' : '';
+
+const leftNav = [
+  { href: `${prefix}/mon-travail`, label: t.nav.travail },
+  { href: `${prefix}/travailler-avec-moi`, label: t.nav.travailler },
+  { href: `${prefix}/commande-portrait`, label: t.nav.commandePortrait },
+];
+const rightNav = [
+  { href: `${prefix}/a-propos`, label: t.nav.apropos },
+  { href: `${prefix}/contact`, label: t.nav.contact },
+];
+const allNav = [{ href: `${prefix}/`, label: t.nav.accueil }, ...leftNav, ...rightNav];
+
+const frHref = getLocalizedPath(Astro.url.pathname, 'fr');
+const enHref = getLocalizedPath(Astro.url.pathname, 'en');
+
+const navClass = 'font-nav text-xs uppercase tracking-[0.15em] text-ink-soft transition-colors hover:text-violet-600';
+---
+
+<header class="sticky top-0 z-50 border-b border-ink/10 bg-paper/95 backdrop-blur">
+  <div class="mx-auto grid h-24 max-w-7xl grid-cols-[1fr_auto] items-center gap-4 px-5 md:h-36 md:grid-cols-[1fr_auto_1fr]">
+    <nav class="hidden items-center gap-10 md:flex lg:gap-12">
+      {leftNav.map((item) => {
+        const words = item.label.split(' ');
+        const isTwoLine = item.href.endsWith('/travailler-avec-moi') || item.href.endsWith('/commande-portrait');
+        return isTwoLine ? (
+          <a href={item.href} class={`${navClass} text-center leading-tight`}>
+            {words[0]}<br />{words.slice(1).join(' ')}
+          </a>
+        ) : (
+          <a href={item.href} class={navClass}>{item.label}</a>
+        );
+      })}
+    </nav>
+
+    <a href={`${prefix}/`} class="relative inline-block leading-[0.8] md:justify-self-center" aria-label="Anne Leblanc — Accueil">
+      <!-- Liserés jaunes décoratifs — extraits du tracé au feutre d'Anne (cf. réf. header), positionnés en % autour des deux lignes du logo. Cachés en dessous de xl (1280px) :
+           avec 3 onglets dans le nav de gauche + Bio à droite, ils empiéteraient sur le trait tant que le header n'est pas au plateau max-w-7xl (cf. correction-2-nav-devis-portrait). -->
+      <Image
+        src={liseretAnne}
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        width={218}
+        height={101}
+        class="pointer-events-none absolute left-[-62%] top-[3%] z-0 hidden h-auto w-[82%] max-w-none xl:block"
+      />
+      <Image
+        src={liseretLeblanc}
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        width={344}
+        height={148}
+        class="pointer-events-none absolute left-[61%] top-[-18%] z-0 hidden h-auto w-[129%] max-w-none xl:block"
+      />
+      <span
+        class="relative z-10 inline-block font-logo text-4xl text-violet-600 sm:text-5xl md:text-6xl"
+        style="transform-origin: 0% 100%; transform: rotate(-4deg);"
+      >Anne</span>
+      <span class="relative z-10 -mt-4 ml-8 block font-logo text-4xl text-violet-600 sm:-mt-5 sm:ml-10 sm:text-5xl md:-mt-6 md:ml-14 md:text-6xl">Leblanc</span>
+    </a>
+
+    <div class="flex items-center justify-end gap-5">
+      <nav class="hidden items-center gap-7 md:flex">
+        {rightNav.map((item) => (
+          <a href={item.href} class={navClass}>{item.label}</a>
+        ))}
+      </nav>
+      <a
+        href={t.meta.instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class={`hidden md:inline ${navClass}`}
+        aria-label="Instagram"
+      >
+        Instagram
+      </a>
+      <div class="flex items-center gap-1">
+        <a
+          href={frHref}
+          class={`rounded px-2 py-1 font-nav text-xs font-medium tracking-wide transition-colors ${lang === 'fr' ? 'bg-violet-600 text-paper' : 'text-ink-soft/50 hover:text-violet-600'}`}
+        >
+          FR
+        </a>
+        <a
+          href={enHref}
+          class={`rounded px-2 py-1 font-nav text-xs font-medium tracking-wide transition-colors ${lang === 'en' ? 'bg-violet-600 text-paper' : 'text-ink-soft/50 hover:text-violet-600'}`}
+        >
+          EN
+        </a>
+      </div>
+      <button id="menu-toggle" class="text-ink md:hidden" aria-label="Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <path d="M2 6h18M2 11h18M2 16h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" class="hidden flex-col gap-1 border-t border-ink/10 px-5 py-3 md:hidden">
+    {allNav.map((item) => (
+      <a href={item.href} class="rounded px-2 py-2.5 font-nav text-sm uppercase tracking-[0.15em] text-ink-soft hover:bg-violet-50 hover:text-violet-700">
+        {item.label}
+      </a>
+    ))}
+    <a href={t.meta.instagramUrl} target="_blank" rel="noopener noreferrer" class="rounded px-2 py-2.5 font-nav text-sm uppercase tracking-[0.15em] text-ink-soft hover:bg-violet-50 hover:text-violet-700">
+      Instagram
+    </a>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('mobile-nav');
+  toggle?.addEventListener('click', () => {
+    const isOpen = nav?.classList.toggle('flex');
+    nav?.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(!!isOpen));
+  });
+</script>
