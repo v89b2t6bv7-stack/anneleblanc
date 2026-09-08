@@ -27,7 +27,7 @@ const prefix = lang === 'en' ? '/en' : '';
 // et tout ce qui l'accompagne) a sa propre page /commande-portrait, pour ne pas mélanger
 // deux parcours de visiteurs très différents. La catégorie FAQ "Commandes personnalisées"
 // part avec elle.
-const faqCategories = w.faq.categories.filter((c: { nom: string }) => c.nom !== 'Commandes personnalisées');
+const faqCategories = w.faq.categories.filter((c: { id?: string }) => c.id !== 'commandes-personnalisees');
 
 // Galerie d'événements déjà réalisés : un média par événement, dans le même ordre que
 // travailler.galeries.items (fr.json/en.json). Le 7e événement (Théâtre de l'Européen) réutilise

@@ -8,546 +8,505 @@
     "contactEmail": "anneleblanc.art@gmail.com"
   },
   "nav": {
-    "accueil": "Accueil",
+    "accueil": "Home",
     "travail": "Portfolio",
-    "travailler": "Travailler avec Anne",
+    "travailler": "Work with Anne",
     "apropos": "Bio",
     "contact": "Contact",
-    "commandePortrait": "Commande de portrait",
-    "mentionsLegales": "Mentions légales",
-    "langSwitchLabel": "EN"
+    "commandePortrait": "Portrait Commission",
+    "mentionsLegales": "Legal Notice",
+    "langSwitchLabel": "FR"
   },
   "accueil": {
-    "activitesIntro": "Le fil conducteur de tout ce que je fais : la rencontre, l'observation des gens, et le dessin comme moyen de créer une expérience ou de raconter quelque chose.",
+    "activitesIntro": "The common thread in everything I do: meeting people, observing them, and drawing as a way to create an experience or tell a story.",
     "activites": [
       {
-        "titre": "Dessin en direct",
-        "description": "Je dessine les invités, les artistes et les moments forts d'un événement, directement sur place, pour créer des souvenirs uniques."
+        "titre": "Live drawing",
+        "description": "I draw guests, artists and key moments of an event live on site, to create unique memories."
       },
       {
-        "titre": "Portraits personnalisés",
-        "description": "Je réalise à la main des portraits originaux sur papier, à partir de vos photos, pour offrir ou garder un souvenir unique."
+        "titre": "Custom portraits",
+        "description": "I hand-draw original portraits on paper from your photos, to give as a gift or keep as a one-of-a-kind memory."
       },
       {
-        "titre": "Dessin & spectacle",
-        "description": "Je dessine les artistes en direct, sur scène ou dans les coulisses, pour capturer l'énergie d'un spectacle et de ceux qui le font vivre."
+        "titre": "Drawing & performance",
+        "description": "I draw performers live, on stage or backstage, to capture the energy of a show and the people behind it."
       },
       {
-        "titre": "Création de contenu",
-        "description": "Je filme mes rencontres et mes dessins pour raconter des histoires humaines sur Instagram et TikTok, entre dessin, conversation et humour."
+        "titre": "Content creation",
+        "description": "I film my encounters and drawings to tell human stories on Instagram and TikTok, blending drawing, conversation and humor."
       },
       {
-        "titre": "Bande dessinée & illustration",
-        "description": "Je transforme mes observations et mes réflexions sur les relations humaines et la société en dessins et bandes dessinées simples, accessibles et spontanées."
+        "titre": "Comics & illustration",
+        "description": "I turn my observations and thoughts on human relationships and society into simple, accessible, spontaneous drawings and comics."
       }
     ],
     "bioBonjour": "Hello!",
     "bioTitre": "About Anne",
-    "bio": "Anne Leblanc est dessinatrice, illustratrice, créatrice de contenu et autrice. Fascinée par les gens — leurs visages, leurs habitudes, leurs petites contradictions — elle observe avant de dessiner, et dessine pour mieux comprendre. Portraits sur le vif, dessin live, bande dessinée ou collaborations : à travers des formes très simples, elle cherche à transformer ce qu'elle observe en histoires humaines accessibles, qui donnent envie de regarder le monde autrement.",
+    "bio": "Anne Leblanc is a French illustrator, content creator and author. Fascinated by people — their faces, their habits, their small contradictions — she observes before drawing, and draws to better understand. Live portraits, live drawing, comics or collaborations: through very simple forms, she turns what she observes into accessible human stories that make people want to look at the world differently.",
     "bioCta": "Learn more",
     "grille": {
       "items": [
         {
           "titre": "Brigitte Bardot",
-          "legende": "Un portrait d'icône, entre référence et interprétation."
+          "legende": "An icon's portrait, between reference and interpretation."
         },
         {
           "titre": "WIA Young Leaders",
-          "legende": "Portraits dessinés lors d'une conférence de femmes leaders."
+          "legende": "Portraits drawn at a conference for women leaders."
         },
         {
           "titre": "Léopold Lemarchand",
-          "legende": "Dessiné en direct, sur scène, au Théâtre de l'Européen."
+          "legende": "Drawn live, on stage, at the Théâtre de l'Européen."
         },
         {
           "titre": "Canal Saint-Martin",
-          "legende": "Observer, s'asseoir, dessiner."
+          "legende": "Watch, sit down, draw."
         },
         {
-          "titre": "Radio Nova à l'Européen",
-          "legende": "Le dessin en direct, capté sur le vif."
+          "titre": "Radio Nova at L'Européen",
+          "legende": "Live drawing, captured in the moment."
         },
         {
           "titre": "Coco",
-          "legende": "« N'aie pas peur du changement et fonce !! »"
+          "legende": "“Don't be afraid of change — just go for it!!”"
         },
         {
           "titre": "Amazon Prime × Éric & Ramzy",
-          "legende": "Une histoire dessinée, racontée à une marque et son public."
+          "legende": "A drawn story, told to a brand and its audience."
         },
         {
-          "titre": "Congrès des audioprothésistes",
-          "legende": "Des rencontres professionnelles transformées en portraits."
+          "titre": "Hearing Care Professionals' Congress",
+          "legende": "Professional encounters turned into portraits."
         },
         {
-          "titre": "Première à l'Européen",
-          "legende": "Bravo Manon — un souvenir de la soirée, encadré."
+          "titre": "Premiere at L'Européen",
+          "legende": "Bravo Manon — a framed memory of the evening."
         },
         {
           "titre": "Panthéon",
-          "legende": "Un carnet, un stylo, un coin de rue."
+          "legende": "A notebook, a pen, a street corner."
         },
         {
           "titre": "Stunfest",
-          "legende": "Deux jours de dessin en direct, à Rennes."
+          "legende": "Two days of live drawing in Rennes."
         },
         {
           "titre": "Diane",
-          "legende": "Le liseré jaune, signature de chaque portrait."
+          "legende": "The yellow outline, the signature of every portrait."
         },
         {
           "titre": "Amixem & Thomas Deseur",
-          "legende": "Dessiner sur la main, devant Pierre Niney."
+          "legende": "Drawing on the hand, in front of Pierre Niney."
         },
         {
           "titre": "Forum des images",
-          "legende": "Un portrait, un souvenir, une salle de cinéma."
+          "legende": "A portrait, a memory, a movie theater."
         },
         {
           "titre": "The Threeman Show",
-          "legende": "Un trio dessiné dans les rues d'Avignon, festival 2026."
+          "legende": "A trio drawn in the streets of Avignon, 2026 festival."
         },
         {
           "titre": "Moussou",
-          "legende": "La vendeuse de gaufres du marché de Noël des Tuileries."
+          "legende": "The waffle seller from the Tuileries Christmas market."
         }
       ]
     },
-    "signature": "Je dessine les gens pour mieux les regarder.",
-    "ctaTitre": "Envie de voir la suite ?",
-    "ctaInstagram": "Suivre sur Instagram",
-    "ctaTravailler": "Travailler avec Anne"
+    "signature": "I draw people to look at them more closely.",
+    "ctaTitre": "Want to see more?",
+    "ctaInstagram": "Follow on Instagram",
+    "ctaTravailler": "Work with Anne"
   },
   "travailler": {
     "intro": {
-      "titre": "Travailler avec Anne",
-      "texte": "c'est faire appel à une artiste qui transforme une rencontre, un événement ou une idée en dessin, pour un événement, une marque ou un projet artistique, sur devis.",
-      "lienPortrait": "Vous cherchez un portrait personnalisé ? → Voir les tarifs et commander"
+      "titre": "Work with Anne",
+      "texte": "means working with an artist who turns an encounter, an event or an idea into a drawing — for an event, a brand or an artistic project, on a quote basis.",
+      "lienPortrait": "Looking for a custom portrait? → See prices and order"
     },
     "prestations": {
-      "titre": "Prestations sur devis",
+      "titre": "Quote-based services",
       "familles": [
         {
-          "titre": "Dessin live & événements",
-          "texte": "Mariages, anniversaires, soirées privées, événements de marque, lancements de produits, événements d'entreprise, festivals, salons, conférences, spectacles, événements culturels : Anne dessine en direct les invités et les moments forts, pour créer un vrai souvenir et une vraie expérience autour de l'événement."
+          "titre": "Live drawing & events",
+          "texte": "Weddings, birthdays, private parties, brand events, product launches, corporate events, festivals, trade shows, conferences, performances, cultural events: Anne draws guests and key moments live, to create a real keepsake and a real experience around the event."
         },
         {
-          "titre": "Projets artistiques & collaborations",
-          "texte": "Création de contenu, collaborations avec des artistes ou créateurs, bande dessinée sur mesure, illustration, intervention artistique, projet éditorial, concept de marque, formats hybrides dessin/vidéo."
+          "titre": "Artistic projects & collaborations",
+          "texte": "Content creation, collaborations with artists or creators, custom comics, illustration, artistic performances, editorial projects, brand concepts, hybrid drawing/video formats."
         },
         {
-          "titre": "Vidéo & réseaux sociaux",
-          "texte": "Contenu filmé autour d'une prestation, formats combinant dessin et vidéo, destinés aux réseaux d'Anne, à ceux du client, ou aux deux."
+          "titre": "Video & social media",
+          "texte": "Filmed content around a service, formats combining drawing and video, for Anne's channels, the client's, or both."
         }
       ],
-      "reseauxSociaux": "Anne est très suivie sur Instagram et TikTok (@itsanneleblanc) — un vrai argument pour les marques et organisateurs d'événements qui cherchent aussi de la visibilité autour de leur événement.",
-      "ctaDevis": "Décrire mon projet",
-      "ctaFaq": "Voir la FAQ"
+      "reseauxSociaux": "Anne has a large following on Instagram and TikTok (@itsanneleblanc) — a real asset for brands and event organizers also looking for visibility around their event.",
+      "ctaDevis": "Describe my project",
+      "ctaFaq": "See the FAQ"
     },
     "devis": {
-      "titre": "Demander un devis",
-      "titreCourt": "Devis",
-      "texte": "Décrivez votre projet ci-dessous — plus la demande est précise, plus Anne pourra vous répondre vite et bien.",
+      "titre": "Request a quote",
+      "titreCourt": "Quote",
+      "texte": "Describe your project below — the more specific the request, the faster and better Anne can respond.",
       "champs": {
-        "nom": "Nom",
+        "nom": "Name",
         "email": "Email",
-        "telephone": "Téléphone (optionnel)",
-        "typeProjet": "Type d'événement ou de projet",
-        "date": "Date souhaitée",
-        "lieu": "Lieu",
-        "invites": "Nombre approximatif d'invités / participants",
-        "duree": "Durée souhaitée / horaires",
-        "prestation": "Prestation souhaitée",
-        "prestationPlaceholder": "Choisir…",
+        "telephone": "Phone (optional)",
+        "typeProjet": "Type of event or project",
+        "date": "Preferred date",
+        "lieu": "Location",
+        "invites": "Approximate number of guests / participants",
+        "duree": "Preferred duration / timing",
+        "prestation": "Service requested",
+        "prestationPlaceholder": "Select…",
         "prestationOptions": [
-          "Dessin live",
-          "Collaboration / projet artistique",
-          "Autre"
+          "Live drawing",
+          "Collaboration / artistic project",
+          "Other"
         ],
-        "besoins": "Besoins particuliers",
-        "budget": "Budget indicatif (optionnel)",
-        "message": "Message libre",
-        "consentement": "J'accepte que les informations transmises via ce formulaire soient utilisées par Anne Leblanc dans le cadre du traitement de ma demande.",
-        "conservation": "Ces informations sont conservées le temps nécessaire au traitement de votre demande. Vous pouvez demander leur suppression à tout moment en écrivant à anneleblanc.art@gmail.com.",
-        "envoyer": "Envoyer ma demande"
+        "besoins": "Special requirements",
+        "budget": "Estimated budget (optional)",
+        "message": "Additional message",
+        "consentement": "I agree that the information submitted through this form may be used by Anne Leblanc to process my request.",
+        "conservation": "This information is kept for as long as necessary to process your request. You can request its deletion at any time by writing to anneleblanc.art@gmail.com.",
+        "envoyer": "Send my request"
       },
-      "confirmationTitre": "Merci !",
-      "confirmation": "Ta demande a bien été envoyée. Anne te répondra dès que possible.",
-      "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+      "confirmationTitre": "Thank you!",
+      "confirmation": "Your request has been sent. Anne will get back to you as soon as possible.",
+      "erreur": "Something went wrong while sending. You can try again, or write directly to"
     },
     "portraits": {
-      "titre": "Commandes de portraits personnalisés",
-      "retour": "Vous organisez un événement plutôt ? → Voir les prestations sur devis",
-      "intro": "Anne réalise des portraits personnalisés à la main, sur papier Bristol, au feutre à alcool et au crayon de couleur. Chaque dessin est un original unique réalisé d'après les photographies fournies par le client. Les tarifs comprennent le dessin et les fournitures artistiques. Le temps de préparation, d'emballage et d'expédition est à prévoir en plus du temps de dessin.",
-      "delai": "Les commandes sont actuellement réalisées avec un délai indicatif de 2 semaines à compter de la validation de la commande et de la réception des photographies nécessaires.",
+      "titre": "Custom Portrait Commissions",
+      "retour": "Organizing an event instead? → See quote-based services",
+      "intro": "Anne hand-draws custom portraits on Bristol paper, using alcohol markers and colored pencils. Each drawing is a unique original made from photographs provided by the client. Prices include the drawing and art supplies. Preparation, packaging and shipping time should be expected in addition to drawing time.",
+      "delai": "Orders are currently completed within an estimated 2 weeks from order confirmation and receipt of the necessary photographs.",
       "formats": [
         {
-          "nom": "Format A5",
-          "dimensions": "14,8 × 21 cm",
+          "nom": "A5 size",
+          "dimensions": "14.8 × 21 cm",
           "rows": [
-            [
-              "1 personne",
-              "160 €"
-            ],
-            [
-              "2 personnes",
-              "205 €"
-            ],
-            [
-              "3 personnes",
-              "250 €"
-            ],
-            [
-              "4 personnes",
-              "295 €"
-            ],
-            [
-              "5 personnes",
-              "340 €"
-            ]
+            ["1 person", "160 €"],
+            ["2 people", "205 €"],
+            ["3 people", "250 €"],
+            ["4 people", "295 €"],
+            ["5 people", "340 €"]
           ],
-          "supplement": "Personne supplémentaire : +45 €",
-          "note": "Le format A5 est particulièrement adapté aux portraits individuels, couples et petites compositions."
+          "supplement": "Additional person: +45 €",
+          "note": "The A5 size is particularly well suited to individual portraits, couples and small compositions."
         },
         {
-          "nom": "Format A4",
-          "dimensions": "21 × 29,7 cm",
+          "nom": "A4 size",
+          "dimensions": "21 × 29.7 cm",
           "rows": [
-            [
-              "1 personne",
-              "290 €"
-            ],
-            [
-              "2 personnes",
-              "350 €"
-            ],
-            [
-              "3 personnes",
-              "415 €"
-            ],
-            [
-              "4 personnes",
-              "475 €"
-            ],
-            [
-              "5 personnes",
-              "540 €"
-            ]
+            ["1 person", "290 €"],
+            ["2 people", "350 €"],
+            ["3 people", "415 €"],
+            ["4 people", "475 €"],
+            ["5 people", "540 €"]
           ],
-          "supplement": "Personne supplémentaire : +65 €",
-          "note": "Le format A4 permet davantage de détails et convient particulièrement aux portraits de famille ou aux compositions réunissant plusieurs personnes."
+          "supplement": "Additional person: +65 €",
+          "note": "The A4 size allows for more detail and is particularly well suited to family portraits or compositions with several people."
         },
         {
-          "nom": "Format A3",
-          "dimensions": "29,7 × 42 cm",
+          "nom": "A3 size",
+          "dimensions": "29.7 × 42 cm",
           "rows": [
-            [
-              "1 personne",
-              "430 €"
-            ],
-            [
-              "2 personnes",
-              "515 €"
-            ],
-            [
-              "3 personnes",
-              "595 €"
-            ],
-            [
-              "4 personnes",
-              "675 €"
-            ]
+            ["1 person", "430 €"],
+            ["2 people", "515 €"],
+            ["3 people", "595 €"],
+            ["4 people", "675 €"]
           ],
-          "supplement": "Personne supplémentaire : +80 €",
-          "note": "Le format A3 est destiné aux grandes compositions et aux dessins que l'on souhaite particulièrement mettre en valeur ou encadrer."
+          "supplement": "Additional person: +80 €",
+          "note": "The A3 size is intended for large compositions and drawings meant to be especially showcased or framed."
         }
       ],
-      "audela": "Pour les compositions de 5 personnes ou plus, un devis personnalisé sera proposé.",
+      "audela": "For compositions of 5 people or more, a custom quote will be provided.",
       "personnalisation": {
-        "titre": "Personnalisation",
-        "texte": "Les tarifs correspondent à un portrait réalisé à partir des photographies fournies par le client. Il est possible d'ajouter des éléments personnalisés afin de raconter une histoire particulière autour du portrait : animaux, objets, fleurs, vêtements ou accessoires spécifiques, décor, lieu particulier, texte ou inscription, éléments symboliques, plusieurs photographies différentes pour composer une seule scène, ou toute autre demande particulière.",
-        "texte2": "Les demandes nécessitant un travail de composition ou de dessin supplémentaire font l'objet d'un supplément, annoncé avant validation de la commande.",
-        "exemplesTitre": "Exemples de suppléments :",
+        "titre": "Customization",
+        "texte": "Prices correspond to a portrait made from photographs provided by the client. Personalized elements can be added to tell a particular story around the portrait: animals, objects, flowers, specific clothing or accessories, a setting, a particular place, text or an inscription, symbolic elements, several different photographs combined into a single scene, or any other special request.",
+        "texte2": "Requests requiring extra composition or drawing work are subject to a surcharge, communicated before the order is confirmed.",
+        "exemplesTitre": "Examples of surcharges:",
         "exemples": [
-          "Personnalisation simple : à partir de +25 €",
-          "Décor ou composition élaborée : à partir de +55 €",
-          "Composition particulièrement complexe : sur devis"
+          "Simple customization: from +25 €",
+          "Elaborate setting or composition: from +55 €",
+          "Particularly complex composition: custom quote"
         ],
-        "note": "Le tarif exact est communiqué avant le début du dessin."
+        "note": "The exact price is communicated before the drawing begins."
       },
       "urgence": {
-        "titre": "Commandes urgentes",
-        "texte": "Le délai standard est actuellement d'environ 2 semaines. Une commande nécessitant une réalisation prioritaire peut être acceptée selon les disponibilités d'Anne.",
+        "titre": "Rush orders",
+        "texte": "The standard turnaround time is currently about 2 weeks. A request needing priority completion may be accepted depending on Anne's availability.",
         "exemples": [
-          "Commande avec délai inférieur à 2 semaines : +30 %",
-          "Commande particulièrement urgente nécessitant une réalisation prioritaire : jusqu'à +50 %, selon le délai demandé."
+          "Order with a turnaround under 2 weeks: +30%",
+          "Particularly urgent order requiring priority completion: up to +50%, depending on the timeframe requested."
         ],
-        "note": "Les commandes urgentes ne peuvent être garanties qu'après confirmation d'Anne."
+        "note": "Rush orders can only be guaranteed after confirmation from Anne."
       },
       "expedition": {
-        "titre": "Expédition",
-        "texte": "Les dessins sont soigneusement protégés et emballés afin de pouvoir être offerts ou conservés dans de bonnes conditions. Les frais d'expédition sont facturés en supplément et dépendent de la destination et du format du dessin. Une remise en main propre à Paris peut être envisagée sur demande."
+        "titre": "Shipping",
+        "texte": "Drawings are carefully protected and packaged so they can be given as a gift or kept in good condition. Shipping costs are charged separately and depend on the destination and the size of the drawing. In-person hand delivery in Paris can be arranged on request."
       },
       "commander": {
-        "titre": "Comment passer commande ?",
-        "intro": "Pour demander un portrait, le client doit fournir :",
+        "titre": "How to place an order?",
+        "intro": "To request a portrait, the client must provide:",
         "items": [
-          "Le format souhaité (A5, A4 ou A3).",
-          "Le nombre de personnes à dessiner.",
-          "Les photographies de référence — suffisamment nettes pour voir clairement les visages et les caractéristiques des personnes. Plusieurs photographies peuvent être envoyées si le client souhaite réunir des personnes qui ne figurent pas sur la même photo.",
-          "Les éventuelles personnalisations (décor, objets, animaux, vêtements, texte, composition particulière, etc.).",
-          "La date à laquelle le dessin est souhaité (délai standard : environ 2 semaines).",
-          "L'adresse de livraison.",
-          "S'il s'agit d'un cadeau, le client peut préciser l'occasion afin qu'Anne puisse éventuellement adapter la présentation ou ajouter un petit mot."
+          "The desired size (A5, A4 or A3).",
+          "The number of people to be drawn.",
+          "Reference photographs — clear enough to show faces and features distinctly. Several photographs can be sent if the client wants to bring together people who don't appear in the same photo.",
+          "Any customizations (setting, objects, animals, clothing, text, a particular composition, etc.).",
+          "The date by which the drawing is needed (standard turnaround: about 2 weeks).",
+          "The delivery address.",
+          "If it's a gift, the client can mention the occasion so Anne can adapt the presentation or add a short note if relevant."
         ]
       },
       "avantDeCommander": {
-        "titre": "À savoir avant de commander",
+        "titre": "Good to know before ordering",
         "items": [
           {
-            "titre": "Chaque dessin est fait à la main.",
-            "texte": "Les portraits sont dessinés individuellement au feutre à alcool et au crayon de couleur sur papier Bristol. Il ne s'agit pas d'une impression ou d'une reproduction numérique."
+            "titre": "Every drawing is hand-made.",
+            "texte": "Portraits are individually drawn with alcohol markers and colored pencils on Bristol paper. This is not a print or digital reproduction."
           },
           {
-            "titre": "Le dessin est une interprétation artistique.",
-            "texte": "Anne cherche à réaliser un portrait fidèle à la personne tout en conservant son propre style de dessin. Le résultat n'est donc pas une reproduction photographique."
+            "titre": "The drawing is an artistic interpretation.",
+            "texte": "Anne aims for a portrait that's true to the person while keeping her own drawing style. The result is therefore not a photographic reproduction."
           },
           {
-            "titre": "Les commandes personnalisées ne comprennent pas de modifications illimitées.",
-            "texte": "Une fois le dessin commencé, les modifications importantes peuvent nécessiter de recommencer une partie du travail et pourront donc entraîner un supplément. Les demandes particulières doivent idéalement être précisées avant le début du dessin."
+            "titre": "Custom orders do not include unlimited revisions.",
+            "texte": "Once the drawing has begun, major changes may require redoing part of the work and could therefore incur a surcharge. Special requests should ideally be specified before the drawing begins."
           },
           {
-            "titre": "Les photographies doivent être de bonne qualité.",
-            "texte": "La qualité des photographies de référence influence directement la qualité du portrait. Anne peut demander d'autres photographies si les images fournies ne permettent pas de réaliser correctement le dessin."
+            "titre": "Photographs must be of good quality.",
+            "texte": "The quality of the reference photographs directly affects the quality of the portrait. Anne may request other photographs if the ones provided don't allow her to draw it properly."
           }
         ]
       },
       "projetsParticuliers": {
-        "titre": "Pour les projets particuliers",
-        "texte": "Pour toute demande qui ne correspond pas à cette grille — grande famille, plusieurs dessins, événement, cadeau d'entreprise, projet artistique particulier, commande en grande quantité, etc. — un devis personnalisé peut être établi."
+        "titre": "For special projects",
+        "texte": "For any request that doesn't fit this pricing grid — a large family, multiple drawings, an event, a corporate gift, a special artistic project, a bulk order, etc. — a custom quote can be provided."
       },
-      "ctaCommander": "Passer commande",
+      "ctaCommander": "Place an order",
       "form": {
-        "titre": "Passer commande",
-        "texte": "Décrivez votre commande ci-dessous — plus la demande est précise, plus Anne pourra vous répondre vite et bien.",
+        "titre": "Place an order",
+        "texte": "Describe your order below — the more specific the request, the faster and better Anne can respond.",
         "champs": {
-          "nom": "Nom",
+          "nom": "Name",
           "email": "Email",
-          "telephone": "Téléphone (optionnel)",
-          "format": "Format souhaité",
-          "formatPlaceholder": "Choisir…",
+          "telephone": "Phone (optional)",
+          "format": "Desired size",
+          "formatPlaceholder": "Select…",
           "formatOptions": ["A5", "A4", "A3"],
-          "personnes": "Nombre de personnes à dessiner",
-          "personnalisations": "Personnalisations éventuelles (décor, objets, animaux, vêtements, texte, etc.)",
-          "date": "Date souhaitée",
-          "photosNote": "Photographies de référence : à envoyer par email à anneleblanc.art@gmail.com après validation de la demande.",
-          "adresse": "Adresse de livraison",
-          "message": "Message libre / besoins particuliers",
-          "envoyer": "Envoyer ma demande de commande"
+          "personnes": "Number of people to draw",
+          "personnalisations": "Any customizations (setting, objects, animals, clothing, text, etc.)",
+          "date": "Preferred date",
+          "photosNote": "Reference photographs: to be sent by email to anneleblanc.art@gmail.com after the request is confirmed.",
+          "adresse": "Delivery address",
+          "message": "Additional message / special requirements",
+          "envoyer": "Send my order request"
         },
-        "confirmationTitre": "Merci !",
-        "confirmation": "Ta demande de commande a bien été envoyée. Anne te répondra dès que possible.",
-        "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+        "confirmationTitre": "Thank you!",
+        "confirmation": "Your order request has been sent. Anne will get back to you as soon as possible.",
+        "erreur": "Something went wrong while sending. You can try again, or write directly to"
       }
     },
     "galeries": {
-      "titre": "Événements déjà réalisés",
-      "texte": "Un aperçu de quelques prestations passées.",
+      "titre": "Past events",
+      "texte": "A look back at a few past projects.",
       "items": [
         {
           "titre": "WIA Young Leaders",
-          "texte": "Anne est intervenue à Paris lors d'une soirée organisée par WIA Young Leaders, réunissant des femmes leaders. Elle a réalisé des portraits sur le vif des participantes tout au long de la soirée.",
+          "texte": "Anne took part in Paris at an evening event organized by WIA Young Leaders, bringing together women leaders. She drew live portraits of attendees throughout the evening.",
           "annee": "2026",
           "lieu": "Paris"
         },
         {
-          "titre": "Congrès des audioprothésistes",
-          "texte": "Anne a participé à Paris au Congrès des audioprothésistes, un rassemblement professionnel dédié au secteur de l'audioprothèse, où elle a dessiné sur le vif les professionnels présents.",
+          "titre": "Hearing Care Professionals' Congress",
+          "texte": "Anne took part in Paris at the Hearing Care Professionals' Congress, a professional gathering for the hearing care industry, where she drew live portraits of the professionals present.",
           "annee": "2026",
           "lieu": "Paris"
         },
         {
           "titre": "Amazon Prime × Éric & Ramzy",
-          "texte": "Anne a dessiné Éric et Ramzy à l'avant-première du film « Tout simplement fan » à Paris, où elle était invitée par Amazon Prime.",
+          "texte": "Anne drew Éric and Ramzy at the Paris premiere of the film “Tout simplement fan,” where she was invited by Amazon Prime.",
           "annee": "2026",
           "lieu": "Paris"
         },
         {
           "titre": "Stunfest",
-          "texte": "Anne a été présente pendant deux jours au Stunfest, festival rennais consacré notamment au jeu vidéo et à la culture gaming, où elle a réalisé des portraits sur le vif des visiteurs.",
+          "texte": "Anne spent two days at Stunfest, a festival in Rennes dedicated to video games and gaming culture, where she drew live portraits of visitors.",
           "annee": "2025",
           "lieu": "Rennes"
         },
         {
           "titre": "Marché des Arts",
-          "texte": "Anne est intervenue au Marché des Arts à Nantes, où elle a dessiné sur le vif les visiteurs ainsi que les personnes tenant les stands de nourriture.",
+          "texte": "Anne took part in the Marché des Arts in Nantes, where she drew live portraits of visitors as well as the people running the food stalls.",
           "annee": "2026",
           "lieu": "Nantes"
         },
         {
-          "titre": "Soirée De Maarse",
-          "texte": "Anne a réalisé des portraits sur le vif lors d'une soirée privée organisée à Montmartre par De Maarse, marque de bijoux.",
+          "titre": "De Maarse Evening",
+          "texte": "Anne drew live portraits at a private evening event held in Montmartre by De Maarse, a jewelry brand.",
           "annee": "2025",
           "lieu": "Paris"
         },
         {
           "titre": "Théâtre de l'Européen — Léopold Lemarchand",
-          "texte": "Le 10 octobre 2025, Anne a dessiné en direct sur scène l'humoriste Léopold Lemarchand, au Théâtre de l'Européen à Paris, devant environ 350 personnes.",
+          "texte": "On October 10, 2025, Anne drew comedian Léopold Lemarchand live on stage at the Théâtre de l'Européen in Paris, in front of about 350 people.",
           "annee": "2025",
           "lieu": "Paris"
         },
         {
-          "titre": "Festival d'Avignon",
-          "texte": "Anne a dessiné sur le vif les artistes se produisant au Festival d'Avignon, au fil des spectacles.",
+          "titre": "Avignon Festival",
+          "texte": "Anne drew live portraits of performers at the Avignon Festival, throughout the shows.",
           "annee": "2026",
           "lieu": "Avignon"
         }
       ]
     },
     "faq": {
-      "titre": "FAQ — Travailler avec Anne",
+      "titre": "FAQ — Work with Anne",
       "categories": [
         {
-          "nom": "Dessin live & événements",
+          "nom": "Live drawing & events",
           "questions": [
             {
-              "q": "Que propose Anne lors d'un événement ?",
-              "r": "Anne dessine les personnes présentes et les moments qui se déroulent sous ses yeux, directement sur place. Elle peut réaliser des portraits individuels, des portraits de couple ou de groupe, mais aussi saisir des instants spontanés et des interactions entre les invités. L'objectif n'est pas seulement de repartir avec un dessin : le dessin crée également une véritable expérience et un moment d'échange avec les personnes qu'elle rencontre."
+              "q": "What does Anne offer at an event?",
+              "r": "Anne draws the people present and the moments unfolding in front of her, right there on site. She can create individual, couple, or group portraits, as well as capture spontaneous moments and interactions between guests. The goal isn't just to leave with a drawing: the drawing also creates a real experience and a moment of connection with the people she meets."
             },
             {
-              "q": "Dans quels types d'événements Anne peut-elle intervenir ?",
-              "r": "Anne peut intervenir aussi bien pour des événements privés que professionnels : mariages, anniversaires, soirées privées, événements de marques, lancements de produits, événements d'entreprise, festivals, salons, conférences, spectacles ou événements culturels. Elle peut également imaginer des formats plus spécifiques avec une marque, un artiste ou une agence. Si un projet ne correspond pas exactement à ces exemples, il est tout de même possible de la contacter pour en discuter."
+              "q": "What types of events can Anne work at?",
+              "r": "Anne can work at both private and professional events: weddings, birthdays, private parties, brand events, product launches, corporate events, festivals, trade shows, conferences, performances or cultural events. She can also design more specific formats with a brand, an artist or an agency. If a project doesn't exactly match these examples, it's still worth getting in touch to discuss it."
             },
             {
-              "q": "Comment se déroule une prestation de dessin live ?",
-              "r": "Anne arrive sur le lieu de l'événement avec son matériel et s'installe dans un endroit qui lui permet de circuler facilement et de voir les invités. Elle peut ensuite aller à la rencontre des personnes à dessiner ou être installée à un emplacement identifié où les invités viennent la voir. Elle dessine directement sur place et privilégie une approche spontanée : les personnes n'ont pas nécessairement besoin de poser longuement. Le déroulement exact est défini en amont en fonction du type d'événement, du nombre d'invités et du temps disponible."
+              "q": "How does a live drawing service work?",
+              "r": "Anne arrives at the venue with her materials and sets up somewhere she can move around easily and see the guests. She can then go meet the people she draws, or be set up at a designated spot where guests come to her. She draws right there on site and favors a spontaneous approach: people don't necessarily need to sit for a long pose. The exact format is worked out beforehand based on the type of event, the number of guests, and the time available."
             },
             {
-              "q": "Les invités doivent-ils poser ?",
-              "r": "Non. Anne peut réaliser des portraits à partir d'une courte pose, mais elle aime également observer les personnes dans leur environnement et capturer des attitudes ou des moments spontanés. Pour certains événements, elle peut donc réaliser des portraits surprises, en choisissant elle-même les personnes ou les moments qu'elle trouve intéressants à dessiner."
+              "q": "Do guests need to pose?",
+              "r": "No. Anne can draw portraits from a short pose, but she also likes to observe people in their environment and capture spontaneous attitudes or moments. For some events, she may create surprise portraits, choosing herself the people or moments she finds interesting to draw."
             },
             {
-              "q": "Combien de personnes Anne peut-elle dessiner pendant un événement ?",
-              "r": "Cela dépend du format, du nombre d'heures de présence et du type de dessins souhaité. Un portrait individuel prend généralement autour d'une quinzaine de minutes lorsqu'il est réalisé dans le cadre d'un événement, mais la cadence peut varier selon le niveau de détail et le format choisi. Plutôt que de promettre un nombre fixe de portraits, Anne préfère définir un objectif réaliste en fonction de l'événement. Si un grand nombre de personnes doit être dessiné, il est conseillé de le préciser dans la demande afin qu'elle puisse proposer le format le plus adapté."
+              "q": "How many people can Anne draw during an event?",
+              "r": "It depends on the format, the number of hours she's present, and the type of drawings wanted. An individual portrait usually takes around fifteen minutes when done at an event, though the pace can vary depending on the level of detail and the chosen format. Rather than promising a fixed number of portraits, Anne prefers to set a realistic goal based on the event. If a large number of people need to be drawn, it's best to mention this in the request so she can suggest the most suitable format."
             },
             {
-              "q": "Les dessins sont-ils terminés et remis le jour même ?",
-              "r": "Lorsque le format de la prestation le permet, les dessins sont réalisés et remis directement aux invités pendant l'événement. Pour certains projets nécessitant davantage de temps ou un niveau de finition particulier, les dessins peuvent être finalisés ou envoyés ultérieurement. Les modalités sont précisées dans le devis."
+              "q": "Are the drawings finished and handed over on the same day?",
+              "r": "When the format of the service allows it, drawings are made and handed directly to guests during the event. For certain projects requiring more time or a particular level of finish, drawings may be completed or sent afterward. The details are specified in the quote."
             },
             {
-              "q": "Anne peut-elle dessiner autre chose que des portraits ?",
-              "r": "Oui. Elle peut notamment dessiner des scènes, des couples, des groupes, des interactions entre plusieurs personnes ou des moments particuliers de l'événement. Le dessin peut également être adapté à un concept précis imaginé avec le client."
+              "q": "Can Anne draw things other than portraits?",
+              "r": "Yes. She can draw scenes, couples, groups, interactions between several people, or particular moments of the event. The drawing can also be adapted to a specific concept designed together with the client."
             },
             {
-              "q": "Une prestation peut-elle être personnalisée pour une marque ou un événement ?",
-              "r": "Oui. La prestation peut être pensée en fonction de l'identité d'une marque, d'un événement ou d'une campagne : format des dessins, papier, présentation, intégration d'un produit ou d'un univers visuel, mise en scène de la prestation, etc. Anne peut également réfléchir avec une agence ou une marque à un concept plus original autour du dessin."
+              "q": "Can a service be customized for a brand or an event?",
+              "r": "Yes. The service can be designed around the identity of a brand, an event, or a campaign: the drawing format, paper, presentation, incorporating a product or a visual world, staging the service, etc. Anne can also work with an agency or a brand to develop a more original concept around drawing."
             },
             {
-              "q": "Anne peut-elle intervenir pour un mariage ?",
-              "r": "Oui. Le dessin live peut notamment intervenir pendant le cocktail, le vin d'honneur ou une partie de la réception. Anne peut dessiner les mariés, les invités, des groupes ou certains moments spontanés de la journée. Chaque mariage étant différent, le format est défini avec les futurs mariés ou l'organisateur en fonction du déroulement de la journée et du nombre d'invités."
+              "q": "Can Anne work at a wedding?",
+              "r": "Yes. Live drawing can take place during the cocktail hour, the reception drinks, or part of the celebration. Anne can draw the couple, guests, groups, or particular spontaneous moments of the day. Since every wedding is different, the format is worked out with the couple or the organizer based on the day's schedule and the number of guests."
             },
             {
-              "q": "Anne se déplace-t-elle ?",
-              "r": "Oui. Anne est basée à Paris et peut se déplacer en France et à l'étranger pour des projets. Les éventuels frais de déplacement, de transport et d'hébergement sont à prévoir en supplément lorsque le projet le nécessite. Ils sont indiqués clairement dans le devis."
+              "q": "Does Anne travel?",
+              "r": "Yes. Anne is based in Paris and can travel within France and abroad for projects. Any travel, transport, and accommodation costs are added on top when the project requires it. These are clearly stated in the quote."
             },
             {
-              "q": "Combien de temps à l'avance faut-il réserver ?",
-              "r": "Le plus tôt est le mieux, particulièrement pour les mariages, événements importants et projets nécessitant un déplacement. Il reste néanmoins possible de contacter Anne pour un événement proche : elle indiquera simplement si elle est disponible. La date n'est définitivement bloquée qu'après validation du devis et selon les modalités indiquées dans celui-ci."
+              "q": "How far in advance should I book?",
+              "r": "The earlier the better, especially for weddings, major events, and projects requiring travel. That said, it's still possible to contact Anne for an event coming up soon — she'll simply let you know if she's available. The date is only confirmed once the quote is accepted, under the terms stated in it."
             }
           ]
         },
         {
-          "nom": "Commandes personnalisées",
+          "id": "commandes-personnalisees",
+          "nom": "Custom orders",
           "questions": [
             {
-              "q": "Anne réalise-t-elle des commandes personnalisées ?",
-              "r": "Oui. Anne réalise des portraits personnalisés à la main à partir de photographies. Elle travaille principalement sur papier Bristol avec des feutres à alcool et des crayons de couleur. Les tarifs dépendent du format et du nombre de personnes représentées (voir grille tarifaire ci-dessus)."
+              "q": "Does Anne take custom orders?",
+              "r": "Yes. Anne hand-draws custom portraits from photographs. She mainly works on Bristol paper with alcohol markers and colored pencils. Prices depend on the size and the number of people depicted (see the pricing table above)."
             },
             {
-              "q": "Peut-on commander un dessin avec plusieurs personnes ?",
-              "r": "Oui. Anne peut réaliser des portraits de couples, de familles, de groupes d'amis ou plusieurs personnes réunies sur un même dessin. Le tarif évolue en fonction du format et du nombre de personnes."
+              "q": "Can I order a drawing with several people?",
+              "r": "Yes. Anne can create portraits of couples, families, groups of friends, or several people brought together in a single drawing. The price varies according to the size and the number of people."
             },
             {
-              "q": "Peut-on demander des éléments personnalisés dans le dessin ?",
-              "r": "Oui. Il est possible d'ajouter certains éléments particuliers : objets, animaux, vêtements, décors, lieux, accessoires ou autres détails qui ont une importance pour le client. Les demandes nécessitant un travail supplémentaire peuvent entraîner un supplément, qui sera indiqué avant validation de la commande."
+              "q": "Can I request personalized elements in the drawing?",
+              "r": "Yes. Certain particular elements can be added: objects, animals, clothing, settings, places, accessories, or other details that matter to the client. Requests requiring extra work may incur a surcharge, which will be indicated before the order is confirmed."
             },
             {
-              "q": "Peut-on demander une commande urgente ?",
-              "r": "Oui, selon les disponibilités d'Anne. Le délai habituel est actuellement d'environ 2 semaines, hors éventuel délai d'expédition. Une demande urgente peut entraîner un supplément en fonction du délai demandé et de sa charge de travail. Anne confirme toujours la possibilité et le tarif avant de commencer."
+              "q": "Can I request a rush order?",
+              "r": "Yes, depending on Anne's availability. The usual turnaround is currently about 2 weeks, not including any shipping time. A rush request may incur a surcharge depending on the timeframe requested and her workload. Anne always confirms whether it's possible and the price before starting."
             },
             {
-              "q": "À partir de quelles photos Anne travaille-t-elle ?",
-              "r": "Anne travaille à partir de photographies fournies par le client. Il est préférable que les visages soient suffisamment visibles, nets et éclairés pour qu'elle puisse les observer correctement. En cas d'hésitation entre plusieurs photographies, le client peut les transmettre dans sa demande afin qu'Anne puisse indiquer celle qui lui semble la plus adaptée."
+              "q": "What kind of photos does Anne work from?",
+              "r": "Anne works from photographs provided by the client. Faces should ideally be clearly visible, sharp, and well lit so she can observe them properly. If unsure between several photos, the client can send them all with the request so Anne can suggest the one that seems best suited."
             },
             {
-              "q": "Combien de temps faut-il pour recevoir une commande ?",
-              "r": "Le délai habituel est actuellement d'environ 2 semaines, auquel peut s'ajouter le délai d'expédition. Le délai exact est confirmé au moment de la commande. Pour une commande urgente, il est conseillé de contacter Anne avant de valider afin qu'elle puisse vérifier ses disponibilités."
+              "q": "How long does it take to receive an order?",
+              "r": "The usual turnaround is currently about 2 weeks, plus any shipping time. The exact timeframe is confirmed when the order is placed. For a rush order, it's best to contact Anne before confirming so she can check her availability."
             }
           ]
         },
         {
-          "nom": "Projets & collaborations",
+          "nom": "Projects & collaborations",
           "questions": [
             {
-              "q": "Anne accepte-t-elle uniquement des prestations de dessin live ?",
-              "r": "Non. Elle est également ouverte à des projets qui utilisent le dessin d'une autre manière : création de contenu, collaborations avec des artistes ou créateurs, bande dessinée sur mesure, illustration, intervention artistique, projet éditorial, concept pour une marque ou format hybride entre dessin et vidéo. Si un projet ne rentre pas dans une catégorie précise, il est tout à fait possible de lui présenter l'idée."
+              "q": "Does Anne only take on live drawing services?",
+              "r": "No. She's also open to projects that use drawing in other ways: content creation, collaborations with artists or creators, custom comics, illustration, artistic performances, editorial projects, brand concepts, or hybrid formats between drawing and video. If a project doesn't fit a specific category, it's still worth pitching the idea to her."
             },
             {
-              "q": "Anne peut-elle créer du contenu pour une marque ?",
-              "r": "Oui. Anne peut imaginer des contenus autour de son univers : dessin, rencontre, portrait, conversation, humour ou découverte d'une personne, d'un lieu ou d'un produit. Elle peut également participer à la conception du format lorsque le projet nécessite une réflexion créative. Les modalités de publication, de production et d'utilisation des contenus sont définies au cas par cas."
+              "q": "Can Anne create content for a brand?",
+              "r": "Yes. Anne can design content around her world: drawing, encounters, portraits, conversation, humor, or discovering a person, a place, or a product. She can also take part in shaping the format when a project calls for creative input. Publishing, production, and usage terms for the content are defined case by case."
             },
             {
-              "q": "Anne peut-elle dessiner une personnalité ou un artiste ?",
-              "r": "Oui. Anne aime particulièrement les projets qui associent dessin, rencontre et spectacle. Elle peut par exemple réaliser le portrait d'un artiste, dessiner quelqu'un pendant une interview ou une rencontre, intervenir autour d'un spectacle ou imaginer un contenu autour de sa personnalité."
+              "q": "Can Anne draw a public figure or an artist?",
+              "r": "Yes. Anne especially enjoys projects that combine drawing, encounters, and performance. For example, she can create an artist's portrait, draw someone during an interview or meeting, take part around a show, or design content around a public figure."
             },
             {
-              "q": "Anne peut-elle intervenir sur scène ?",
-              "r": "Oui. Elle peut intervenir dans un contexte de spectacle ou d'événement culturel et dessiner un artiste, un intervenant ou une scène en direct. Le format dépend du projet : dessin pendant une représentation, performance, création d'un portrait en direct, contenu vidéo autour de l'intervention, etc."
+              "q": "Can Anne perform on stage?",
+              "r": "Yes. She can take part in a show or cultural event and draw a performer, a speaker, or a scene live. The format depends on the project: drawing during a performance, a live drawing show, creating a live portrait, video content around the appearance, etc."
             }
           ]
         },
         {
-          "nom": "Vidéo & réseaux sociaux",
+          "nom": "Video & social media",
           "questions": [
             {
-              "q": "Les prestations d'Anne peuvent-elles donner lieu à du contenu sur ses réseaux ?",
-              "r": "Pas nécessairement. Lorsque cela est pertinent et avec l'accord des personnes concernées, Anne peut filmer certains moments de ses prestations et les transformer en contenu pour ses réseaux sociaux. Cela peut être prévu dès le départ avec le client lorsqu'il souhaite également bénéficier d'un contenu autour de l'événement. La création et la publication de contenu peuvent alors faire l'objet d'une prestation distincte."
+              "q": "Can Anne's services lead to content on her social media?",
+              "r": "Not necessarily. When it's relevant and with the agreement of those involved, Anne may film certain moments of her services and turn them into content for her social media. This can be planned from the start with the client if they'd also like content around the event. Creating and publishing that content may then be handled as a separate service."
             },
             {
-              "q": "Peut-on demander à Anne de créer une vidéo en plus du dessin ?",
-              "r": "Oui. Anne peut imaginer des formats qui combinent dessin et vidéo : rencontre avec une personne, interview pendant le dessin, coulisses d'un événement, réaction au portrait, etc. Le contenu peut être destiné à ses réseaux sociaux, à ceux du client, ou aux deux selon le projet. Les droits d'utilisation et les modalités de diffusion sont définis en amont."
+              "q": "Can I ask Anne to create a video in addition to the drawing?",
+              "r": "Yes. Anne can design formats that combine drawing and video: meeting someone, an interview while drawing, behind-the-scenes footage from an event, reactions to the portrait, etc. The content can be intended for her social media, the client's, or both, depending on the project. Usage rights and distribution terms are defined in advance."
             }
           ]
         },
         {
-          "nom": "Tarifs & devis",
+          "nom": "Prices & quotes",
           "questions": [
             {
-              "q": "Où trouver les tarifs d'Anne ?",
-              "r": "Les tarifs des commandes de portraits personnalisés sont indiqués sur la page dédiée « Commande de portrait », afin de permettre aux clients d'avoir une première idée du budget avant de contacter Anne. Pour les événements, collaborations, prestations artistiques et projets professionnels, Anne fonctionne principalement sur devis, car le prix dépend du format du projet."
+              "q": "Where can I find Anne's prices?",
+              "r": "Prices for custom portrait orders are listed on the dedicated “Portrait Commission” page, so clients can get a first idea of the budget before contacting Anne. For events, collaborations, artistic services, and professional projects, Anne mainly works on a quote basis, since the price depends on the shape of the project."
             },
             {
-              "q": "Pourquoi les prestations événementielles sont-elles sur devis ?",
-              "r": "Une prestation peut varier énormément selon : la durée de présence, le type d'événement, le nombre d'invités, le nombre et le type de dessins souhaités, le lieu, les déplacements, le niveau de personnalisation, la création éventuelle de contenu, et les besoins spécifiques du client. Anne préfère donc établir un devis adapté plutôt qu'afficher un tarif unique qui ne correspondrait pas à tous les projets."
+              "q": "Why are event services quote-based?",
+              "r": "A service can vary enormously depending on: how long Anne is present, the type of event, the number of guests, the number and type of drawings wanted, the location, travel, the level of customization, any content creation involved, and the client's specific needs. Anne therefore prefers to put together a tailored quote rather than list a single price that wouldn't fit every project."
             },
             {
-              "q": "Comment demander un devis ?",
-              "r": "Le formulaire de contact ci-dessus permet de transmettre les informations essentielles concernant le projet. Plus la demande est précise, plus Anne pourra répondre efficacement."
+              "q": "How do I request a quote?",
+              "r": "The contact form above lets you share the key details of your project. The more specific the request, the more effectively Anne can respond."
             },
             {
-              "q": "Sous quel délai Anne répond-elle ?",
-              "r": "Anne fait son possible pour répondre aux demandes professionnelles et aux commandes dans les meilleurs délais. Le délai peut varier selon sa charge de travail et ses déplacements. Lorsqu'un projet comporte une date importante ou proche, il est conseillé de l'indiquer clairement dans le message."
+              "q": "How quickly does Anne respond?",
+              "r": "Anne does her best to respond to professional inquiries and orders as quickly as possible. Response time can vary depending on her workload and travel schedule. If a project has an important or upcoming date, it's best to mention it clearly in the message."
             },
             {
-              "q": "Comment se déroule une collaboration après une demande ?",
-              "r": "Après réception de la demande, Anne vérifie la faisabilité du projet et ses disponibilités. Si le projet est pertinent, elle échange si nécessaire avec le client sur ses besoins puis lui adresse un devis. La prestation est confirmée après acceptation du devis et selon les conditions indiquées dans celui-ci. Pour les projets plus complexes, un brief précis peut également être défini en amont."
+              "q": "What happens after I submit a request?",
+              "r": "Once Anne receives the request, she checks the project's feasibility and her availability. If the project is a good fit, she'll discuss the client's needs if needed and then send a quote. The service is confirmed once the quote is accepted, under the terms it states. For more complex projects, a detailed brief can also be worked out beforehand."
             }
           ]
         }
       ],
       "autre": {
-        "titre": "Une idée qui ne rentre dans aucune catégorie ?",
-        "texte": "Parlez-lui-en. Anne est particulièrement intéressée par les projets qui utilisent le dessin d'une manière originale : événement, spectacle, marque, vidéo, bande dessinée, rencontre, performance ou projet artistique. Il n'est pas nécessaire d'avoir déjà imaginé le format parfait. Une idée ou une envie suffit pour prendre contact et réfléchir ensemble à la manière de la transformer en projet."
+        "titre": "An idea that doesn't fit any category?",
+        "texte": "Tell her about it. Anne is especially interested in projects that use drawing in an original way: an event, a show, a brand, video, comics, an encounter, a performance, or an artistic project. There's no need to have already figured out the perfect format. An idea or a simple urge is enough to get in touch and think together about how to turn it into a project."
       }
     }
   },
@@ -556,188 +515,188 @@
     "categories": [
       {
         "slug": "dessin-live",
-        "titre": "Dessin live",
-        "texte": "Je dessine en direct les invités et les artistes, pendant des événements, des festivals, des soirées, des spectacles ou des lancements de marque — la spontanéité de l'instant, saisie sur le vif."
+        "titre": "Live drawing",
+        "texte": "I draw guests and artists live, at events, festivals, parties, shows or brand launches — the spontaneity of the moment, captured on the spot."
       },
       {
         "slug": "collaboration-creation-contenu",
-        "titre": "Collaboration et création de contenu",
-        "texte": "Je filme mes rencontres et mes dessins pour Instagram et TikTok, où une vraie communauté me suit au quotidien — un vrai atout pour les marques et les organisateurs d'événements qui cherchent aussi de la visibilité autour de leur projet."
+        "titre": "Collaboration & content creation",
+        "texte": "I film my encounters and drawings for Instagram and TikTok, where a real community follows me day to day — a real asset for brands and event organizers also looking for visibility around their project."
       },
       {
         "slug": "bd-et-illustrations",
-        "titre": "BD et illustrations",
-        "texte": "Mes observations et mes réflexions sur les relations humaines et la société, transformées en planches et en illustrations simples, accessibles, spontanées."
+        "titre": "Comics & illustrations",
+        "texte": "My observations and thoughts on human relationships and society, turned into simple, accessible, spontaneous comic pages and illustrations."
       },
       {
         "slug": "carnet",
-        "titre": "Carnet",
+        "titre": "Sketchbook",
         "texte": ""
       }
     ],
-    "instagramCta": "Suivre sur Instagram",
-    "collabInstagramTexte": "Le meilleur endroit pour découvrir tout le travail d'Anne en vidéo, c'est son compte Instagram — c'est là qu'elle publie toutes ses créations.",
-    "collabInstagramCta": "Voir plus sur Instagram",
-    "ctaTitre": "Des illustrations sur mesure, entre dessin vivant et récit visuel",
-    "ctaTexte": "Anne propose des dessins et illustrations sur mesure, entre dessin en direct, portraits personnalisés et collaborations de contenu. Son travail allie une pratique artistique sincère à la matière du papier, pour créer des pièces uniques qui racontent une histoire. Elle est disponible pour des événements, des collaborations de marque et des commandes privées.",
-    "ctaBouton": "Prendre contact"
+    "instagramCta": "Follow on Instagram",
+    "collabInstagramTexte": "The best place to see all of Anne's video work is her Instagram account — that's where she posts everything she creates.",
+    "collabInstagramCta": "See more on Instagram",
+    "ctaTitre": "Custom illustration, between live drawing and visual storytelling",
+    "ctaTexte": "Anne offers custom drawings and illustrations, spanning live drawing, personalized portraits, and content collaborations. Her work combines a sincere artistic practice with the physical presence of paper, to create one-of-a-kind pieces that tell a story. She's available for events, brand collaborations, and private commissions.",
+    "ctaBouton": "Get in touch"
   },
   "contact": {
-    "titre": "Envie de travailler ensemble ?",
-    "intro": "Événement, commande, collaboration ou simple question : Anne serait heureuse d'échanger avec vous.",
+    "titre": "Want to work together?",
+    "intro": "An event, a commission, a collaboration, or just a question: Anne would be happy to hear from you.",
     "profils": [
       {
         "type": "devis",
-        "titre": "Marque",
-        "texte": "Collaboration, création de contenu ou projet de marque.",
-        "cta": "Décrire mon projet"
+        "titre": "Brand",
+        "texte": "Collaboration, content creation, or a brand project.",
+        "cta": "Describe my project"
       },
       {
         "type": "devis",
-        "titre": "Organisateur d'événement",
-        "texte": "Dessin live pour un événement, un mariage, un lancement ou une soirée d'entreprise.",
-        "cta": "Décrire mon projet"
+        "titre": "Event organizer",
+        "texte": "Live drawing for an event, a wedding, a launch, or a corporate party.",
+        "cta": "Describe my project"
       },
       {
         "type": "portraits",
-        "titre": "Commande de dessin",
-        "texte": "Portrait personnalisé, réalisé à partir de vos photos.",
-        "cta": "Voir les portraits"
+        "titre": "Drawing commission",
+        "texte": "A custom portrait, made from your photos.",
+        "cta": "See portraits"
       },
       {
         "type": "email",
-        "titre": "Journaliste, éditeur, professionnel",
-        "texte": "Interview, proposition éditoriale ou toute autre demande.",
-        "cta": "Écrire à Anne"
+        "titre": "Journalist, publisher, professional",
+        "texte": "An interview, an editorial proposal, or any other request.",
+        "cta": "Write to Anne"
       }
     ],
-    "coordonneesTitre": "Coordonnées",
-    "reseauxTitre": "Réseaux sociaux"
+    "coordonneesTitre": "Contact details",
+    "reseauxTitre": "Social media"
   },
   "apropos": {
-    "intro": "Anne Leblanc est une dessinatrice basée à Paris. Avant de dessiner, elle a d'abord appris à regarder.",
+    "intro": "Anne Leblanc is an illustrator based in Paris. Before she learned to draw, she first learned to look.",
     "recit": [
       {
         "type": "p",
-        "texte": "Elle commence par une école de théâtre, qu'elle suit pendant environ 2 ans — une première manière d'observer les gens : les corps, les expressions, la façon dont une présence peut raconter quelque chose sans parler."
+        "texte": "She started out at a theater school, which she attended for about 2 years — a first way of observing people: bodies, expressions, the way a presence can say something without speaking."
       },
       {
         "type": "quote",
-        "texte": "Cette période reste essentielle dans mon parcours — mon travail aujourd'hui est encore très lié à l'observation des autres."
+        "texte": "That time remains essential to my path — my work today is still deeply tied to observing others."
       },
       {
         "type": "p",
-        "texte": "Elle se dirige ensuite vers des études d'architecture et de scénographie, pendant deux ans — un virage guidé par l'envie de travailler l'espace, les images et la mise en scène, et par une question centrale à la scénographie : comment raconter une histoire visuellement ?"
+        "texte": "She then moved on to studying architecture and set design for two years — a shift driven by a desire to work with space, images and staging, and by a question at the heart of set design: how do you tell a story visually?"
       },
       {
         "type": "p",
-        "texte": "C'est au Théâtre de l'Européen qu'elle poursuit ensuite son parcours : elle en est responsable depuis l'âge de 23 ans, entre technique et univers artistique. C'est dans ce cadre qu'elle dessine des artistes en direct sur scène, notamment l'humoriste Léopold Lemarchand, devant environ 350 personnes."
+        "texte": "Her path then continued at the Théâtre de l'Européen: she has run it since the age of 23, balancing technical work and artistic direction. It's in this setting that she draws performers live on stage, including comedian Léopold Lemarchand, in front of about 350 people."
       },
       {
         "type": "p",
-        "texte": "Le dessin devient alors progressivement son principal moyen d'expression. En septembre 2024, elle commence à publier ses dessins sur Instagram — d'abord ses amis, puis des inconnus rencontrés dans les parcs et les rues de Paris."
+        "texte": "Drawing gradually became her main means of expression. In September 2024, she started posting her drawings on Instagram — first her friends, then strangers she met in the parks and streets of Paris."
       },
       {
         "type": "quote",
-        "texte": "Ce qui m'intéresse, c'est de rencontrer quelqu'un, de l'observer pendant plusieurs minutes, et d'essayer de comprendre ce qui fait son visage, son attitude, sa présence. Je ne cherche pas à reproduire quelqu'un : le dessin est pour moi une manière de regarder réellement une personne."
+        "texte": "What interests me is meeting someone, observing them for several minutes, and trying to understand what makes up their face, their attitude, their presence. I'm not trying to reproduce someone: for me, drawing is a way of truly looking at a person."
       },
       {
         "type": "p",
-        "texte": "Elle aime dessiner sur le vif, où qu'elle soit — à la plage, au restaurant, dans la rue, en plein événement — dès qu'elle peut sortir un carnet et un stylo, avec ce côté immédiat et imprévisible : observer quelqu'un, faire des choix très vite, et transmettre quelque chose de lui avec très peu de moyens. Filmer ses dessins et les partager en ligne devient une étape importante de son parcours — à la fois pratique artistique et manière de rencontrer des gens."
+        "texte": "She loves drawing on the spot, wherever she is — at the beach, in a restaurant, in the street, in the middle of an event — as soon as she can pull out a notebook and a pen, with that immediate, unpredictable quality: observing someone, making choices very fast, and conveying something of them with very little. Filming her drawings and sharing them online became an important step in her path — both an artistic practice and a way of meeting people."
       }
     ],
     "sections": [
       {
-        "titre": "Observer, comprendre, simplifier, transmettre",
+        "titre": "Observe, understand, simplify, share",
         "blocks": [
           {
             "type": "p",
-            "texte": "Anne observe naturellement beaucoup : elle aime regarder les gens, écouter leurs conversations, remarquer les petits détails, comprendre les dynamiques entre eux — et peut passer beaucoup de temps à essayer de comprendre quelque chose avant de produire une réponse."
+            "texte": "Anne is naturally very observant: she likes watching people, listening to their conversations, noticing small details, understanding the dynamics between them — and can spend a lot of time trying to understand something before producing a response."
           },
           {
             "type": "p",
-            "texte": "Dans son travail, elle cherche à transformer cette observation en quelque chose de créatif : comprendre, puis simplifier en une image — partir de quelque chose de complexe, une personne, une émotion, une idée, et en extraire l'essentiel. C'est aussi ce qui l'attire vers la bande dessinée et la vulgarisation : rendre une idée compliquée accessible par des images simples."
+            "texte": "In her work, she tries to turn that observation into something creative: understanding, then simplifying it into an image — starting from something complex, a person, an emotion, an idea, and drawing out its essence. That's also what draws her to comics and to making things easy to understand: turning a complicated idea into something accessible through simple images."
           }
         ]
       },
       {
-        "titre": "Le papier comme matière",
+        "titre": "Paper as material",
         "blocks": [
           {
             "type": "p",
-            "texte": "Le papier occupe une place importante dans sa pratique. Anne n'a pas envie de reproduire numériquement l'esthétique du dessin traditionnel : elle aime travailler la matière — papier, feutre, crayon — et les accidents qui peuvent survenir en dessinant."
+            "texte": "Paper plays an important role in her practice. Anne has no interest in digitally reproducing the look of traditional drawing: she likes working with the material itself — paper, marker, pencil — and the happy accidents that can happen while drawing."
           },
           {
             "type": "quote",
-            "texte": "Je me suis beaucoup demandé si je devais passer au dessin sur tablette, comme beaucoup d'autres illustrateurs. Mais je me suis rendu compte que j'aime profondément le papier — j'ai aujourd'hui envie d'en faire une vraie force, plutôt que quelque chose de moins moderne."
+            "texte": "I wondered a lot whether I should switch to drawing on a tablet, like a lot of other illustrators do. But I realized I deeply love paper — today I want to make it a real strength, rather than something less modern."
           },
           {
             "type": "p",
-            "texte": "Elle travaille sur papier Bristol, au feutre à alcool et au crayon de couleur pour ses portraits, et beaucoup au stylo bille sur carnet. Elle aime que l'objet existe réellement avant d'être numérisé — le scan n'étant qu'une manière de faire passer un objet physique dans le monde numérique."
+            "texte": "She works on Bristol paper with alcohol markers and colored pencils for her portraits, and a lot with a ballpoint pen in a notebook. She likes the object to physically exist before it's digitized — scanning is simply a way of carrying a physical object into the digital world."
           }
         ]
       },
       {
-        "titre": "La rencontre avant tout",
+        "titre": "The encounter above all",
         "blocks": [
           {
             "type": "p",
-            "texte": "La rencontre est au cœur de sa pratique. Quand Anne dessine quelqu'un, il ne s'agit jamais seulement de faire son portrait, mais de discuter avec cette personne, découvrir qui elle est, ce qu'elle pense, ce dont elle rêve. Le dessin devient un prétexte à la rencontre — et un petit événement en soi : on s'assoit, se laisse observer quelques minutes, découvre son portrait, et repart avec quelque chose d'inattendu."
+            "texte": "The encounter is at the heart of her practice. When Anne draws someone, it's never just about making their portrait — it's about talking with that person, discovering who they are, what they think, what they dream about. The drawing becomes an excuse for the encounter — and a small event in itself: you sit down, let yourself be observed for a few minutes, see your portrait, and walk away with something unexpected."
           },
           {
             "type": "p",
-            "texte": "Anne est aussi très attirée par les systèmes et les formats : prendre beaucoup d'informations, chercher les liens entre elles, puis les « essorer » jusqu'à trouver une idée centrale. Elle souhaite aujourd'hui développer une pratique qui se situe entre dessin, observation, rencontre et transmission."
+            "texte": "Anne is also drawn to systems and formats: taking in a lot of information, looking for the connections between it, then “wringing it out” until a central idea emerges. Today she wants to develop a practice that sits between drawing, observation, encounter, and sharing."
           }
         ]
       },
       {
-        "titre": "Ce qu'elle cherche dans le dessin",
+        "titre": "What she looks for in drawing",
         "blocks": [
           {
             "type": "p",
-            "texte": "Anne ne cherche pas le dessin le plus virtuose ou le plus détaillé possible, mais la bonne manière de transmettre une idée à quelqu'un. Le travail de Liv Strömquist l'a confortée dans cette idée : sa manière de prendre des sujets complexes — sociologie, amour, rapports humains — et de les transformer en bande dessinée accessible montre que la simplicité peut être une force."
+            "texte": "Anne isn't after the most virtuosic or detailed drawing possible, but the right way to convey an idea to someone. Liv Strömquist's work reinforced that belief for her: the way she takes complex subjects — sociology, love, human relationships — and turns them into accessible comics shows that simplicity can be a strength."
           },
           {
             "type": "p",
-            "texte": "Elle est aussi très attirée par les artistes qui transforment quelque chose de personnel en quelque chose d'universel — une expérience, un détail précis, dans lequel beaucoup peuvent se reconnaître. C'est une direction qu'elle aimerait continuer à développer dans son propre travail."
+            "texte": "She's also drawn to artists who turn something personal into something universal — an experience, a specific detail, that many people can recognize themselves in. It's a direction she'd like to keep developing in her own work."
           }
         ]
       }
     ],
-    "ctaDevis": "Demander un devis"
+    "ctaDevis": "Request a quote"
   },
   "mentionsLegales": {
-    "titre": "Mentions légales",
+    "titre": "Legal Notice",
     "editeur": {
-      "titre": "Éditeur du site",
-      "intro": "Le site est édité par Anne Leblanc, entrepreneur individuel (auto-entrepreneur).",
+      "titre": "Site Publisher",
+      "intro": "This site is published by Anne Leblanc, a French sole trader (auto-entrepreneur).",
       "items": [
-        "Nom : Anne Leblanc",
-        "Statut : Entrepreneur individuel (auto-entrepreneur)",
-        "SIRET : 993 748 276 00017",
-        "Adresse : 66 bd Voltaire, 75011 Paris, France",
-        "Téléphone : 06 59 28 45 92",
-        "Email : anneleblanc.art@gmail.com"
+        "Name: Anne Leblanc",
+        "Status: Sole trader (auto-entrepreneur)",
+        "SIRET: 993 748 276 00017",
+        "Address: 66 bd Voltaire, 75011 Paris, France",
+        "Phone: 06 59 28 45 92",
+        "Email: anneleblanc.art@gmail.com"
       ]
     },
     "directeur": {
-      "titre": "Directeur de la publication",
+      "titre": "Publication Director",
       "texte": "Anne Leblanc."
     },
     "hebergement": {
-      "titre": "Hébergement",
-      "texte": "Le site est hébergé par :",
+      "titre": "Hosting",
+      "texte": "This site is hosted by:",
       "nom": "Netlify, Inc.",
-      "adresse": "101 2nd Street, San Francisco, CA 94105, États-Unis",
+      "adresse": "101 2nd Street, San Francisco, CA 94105, United States",
       "url": "https://www.netlify.com"
     },
     "propriete": {
-      "titre": "Propriété intellectuelle",
-      "texte": "L'ensemble des contenus présents sur ce site (illustrations, dessins, photographies, textes, mise en page) est la propriété d'Anne Leblanc, sauf mention contraire. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, de ces contenus, par quelque procédé que ce soit, sans autorisation préalable, est interdite."
+      "titre": "Intellectual Property",
+      "texte": "All content on this site (illustrations, drawings, photographs, text, layout) is the property of Anne Leblanc, unless otherwise stated. Any reproduction, representation, modification, or use, in whole or in part, of this content, by any means whatsoever, without prior authorization, is prohibited."
     },
     "donnees": {
-      "titre": "Données personnelles",
-      "texte": "Les informations transmises via le formulaire de contact/devis de ce site (nom, email, description de projet, etc.) sont utilisées uniquement dans le cadre de la demande formulée, et ne sont ni cédées ni utilisées à d'autres fins. Conformément à la réglementation en vigueur (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données, que vous pouvez exercer en écrivant à anneleblanc.art@gmail.com."
+      "titre": "Personal Data",
+      "texte": "Information submitted through this site's contact/quote form (name, email, project description, etc.) is used solely to handle the request made, and is neither shared nor used for any other purpose. In accordance with applicable regulations (GDPR), you have the right to access, correct, and delete your data, which you can exercise by writing to anneleblanc.art@gmail.com."
     }
   }
 }

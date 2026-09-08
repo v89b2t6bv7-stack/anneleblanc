@@ -16,7 +16,7 @@ const prefix = lang === 'en' ? '/en' : '';
 // besoin de lire tout ça, et inversement. Le bouton "Passer commande" mène maintenant à un
 // vrai formulaire (Netlify Forms, même mécanisme que le devis événementiel) au lieu d'un
 // mailto — cf. correction-formulaire-commande-portrait.
-const faqCommandes = w.faq.categories.find((c: { nom: string }) => c.nom === 'Commandes personnalisées');
+const faqCommandes = w.faq.categories.find((c: { id?: string }) => c.id === 'commandes-personnalisees');
 const commandeChamps = {
   ...w.portraits.form.champs,
   consentement: w.devis.champs.consentement,
