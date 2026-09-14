@@ -172,8 +172,8 @@
         "envoyer": "Envoyer ma demande"
       },
       "confirmationTitre": "Merci !",
-      "confirmation": "Ta demande a bien été envoyée. Anne te répondra dès que possible.",
-      "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+      "confirmation": "Votre demande a bien été envoyée. Anne vous répondra dès que possible.",
+      "erreur": "Un problème est survenu lors de l'envoi. Vous pouvez réessayer, ou écrire directement à"
     },
     "portraits": {
       "titre": "Commandes de portraits personnalisés",
@@ -346,8 +346,8 @@
           "envoyer": "Envoyer ma demande de commande"
         },
         "confirmationTitre": "Merci !",
-        "confirmation": "Ta demande de commande a bien été envoyée. Anne te répondra dès que possible.",
-        "erreur": "Un problème est survenu lors de l'envoi. Tu peux réessayer, ou écrire directement à"
+        "confirmation": "Votre demande de commande a bien été envoyée. Anne vous répondra dès que possible.",
+        "erreur": "Un problème est survenu lors de l'envoi. Vous pouvez réessayer, ou écrire directement à"
       }
     },
     "galeries": {
