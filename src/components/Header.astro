@@ -44,9 +44,10 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft tra
     <a href={`${prefix}/`} class="relative inline-block leading-[0.8] justify-self-start md:justify-self-center" aria-label="Anne Leblanc — Accueil">
       <!-- Liserés jaunes décoratifs — extraits du tracé au feutre d'Anne (cf. réf. header), positionnés en % autour des deux lignes du logo. `justify-self-start` évite
            que ce lien s'étire sur toute la colonne de la grille en dessous de md (sans quoi les % de position des liserets se calculeraient sur une largeur bien
-           trop grande). Toujours visibles désormais, à 3 paliers de taille/position pour ne jamais toucher le nav : petit en dessous de 768px, intermédiaire entre
-           768px et 1024px, taille/position d'origine à partir de 1024px (cf. correction-2-nav-devis-portrait, correction-liseret-visible-largeur-normale, puis
-           correction-jaune-toutes-largeurs). -->
+           trop grande). Toujours visibles, à 5 paliers fins de taille/position pour une progression douce sans jamais toucher le nav : le liseret "Leblanc" (droite)
+           ne rétrécit quasi jamais en dessous de 768px (le nav de gauche ne le contraint pas), seul "Anne" (gauche) a une petite réduction ponctuelle à 768px, pile
+           où le vrai menu à 3 mots remplace le hamburger (cf. correction-2-nav-devis-portrait, correction-liseret-visible-largeur-normale, correction-jaune-toutes-largeurs,
+           puis correction-transition-douce-liserets). -->
       <Image
         src={liseretAnne}
         alt=""
@@ -54,7 +55,12 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft tra
         loading="eager"
         width={218}
         height={101}
-        class="pointer-events-none absolute top-[3%] z-0 h-auto w-[38%] left-[-11%] max-w-none md:w-[30%] md:left-[-7%] lg:w-[82%] lg:left-[-62%]"
+        class="pointer-events-none absolute top-[3%] z-0 h-auto max-w-none
+               w-[38%] left-[-11%]
+               min-[768px]:w-[30%] min-[768px]:left-[-7%]
+               min-[850px]:w-[50%] min-[850px]:left-[-20%]
+               min-[900px]:w-[65%] min-[900px]:left-[-35%]
+               min-[1000px]:w-[82%] min-[1000px]:left-[-62%]"
       />
       <Image
         src={liseretLeblanc}
@@ -63,7 +69,11 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft tra
         loading="eager"
         width={344}
         height={148}
-        class="pointer-events-none absolute top-[-18%] z-0 h-auto w-[90%] left-[40%] max-w-none md:w-[55%] md:left-[35%] lg:w-[129%] lg:left-[61%]"
+        class="pointer-events-none absolute top-[-18%] z-0 h-auto max-w-none
+               w-[90%] left-[40%]
+               min-[850px]:w-[100%] min-[850px]:left-[44%]
+               min-[900px]:w-[110%] min-[900px]:left-[50%]
+               min-[1000px]:w-[129%] min-[1000px]:left-[61%]"
       />
       <span
         class="relative z-10 inline-block font-logo text-4xl text-violet-600 sm:text-5xl md:text-6xl"
