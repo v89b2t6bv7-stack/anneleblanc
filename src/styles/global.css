@@ -30,7 +30,9 @@
 
 @font-face {
   font-family: "Selima";
-  src: url("/fonts/Selima.ttf") format("truetype");
+  src:
+    url("/fonts/Selima.woff") format("woff"),
+    url("/fonts/Selima.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: optional;
