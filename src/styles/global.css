@@ -35,7 +35,7 @@
     url("/fonts/Selima.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: block;
 }
 
 @layer base {
