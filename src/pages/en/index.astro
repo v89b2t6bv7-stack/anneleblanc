@@ -116,6 +116,8 @@ const gridColors: ('violet' | 'yellow')[] = [
 // le survol (overlay/légende) ne change pas. Repérées par le titre de la case (fr.json
 // "grille.items"), identique en fr/en.
 const gridLinks: Record<string, string> = {
+  'Diane': 'https://www.instagram.com/p/Dew79rxOXi1/',
+  'Radio Nova': 'https://www.instagram.com/p/DKkM8DqswxE/',
   'Léopold Lemarchand': 'https://www.instagram.com/p/DPwZfAcjFqC/',
   'Amixem & Thomas Deseur': 'https://www.instagram.com/p/DT8Za7iDC_B/',
   'The Threeman Show': 'https://www.instagram.com/p/DcOHEyKMpuR/',
@@ -223,7 +225,7 @@ const igPlaceholders = [igA, igB, igC, igD, igE, igF];
         </a>
         <a
           href={`${prefix}/travailler-avec-moi`}
-          class="rounded-full border border-paper/40 px-7 py-3 text-sm text-paper transition-colors hover:border-paper hover:bg-paper/10"
+          class="rounded-full bg-violet-400 px-7 py-3 text-sm text-paper transition-colors hover:bg-violet-400/75"
         >
           {a.ctaTravailler}
         </a>
