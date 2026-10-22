@@ -45,8 +45,8 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft tra
       <!-- Liserés jaunes décoratifs — extraits du tracé au feutre d'Anne (cf. réf. header), positionnés en % autour des deux lignes du logo. `justify-self-start` évite
            que ce lien s'étire sur toute la colonne de la grille en dessous de md (sans quoi les % de position des liserets se calculeraient sur une largeur bien
            trop grande). Le liseret "Leblanc" (droite) est toujours visible, à 5 paliers fins de taille/position pour une progression douce sans jamais toucher le nav ; il ne
-           rétrécit quasi jamais sous 768px. Le liseret "Anne" (gauche) n'apparaît qu'à partir de 850px (3 paliers) : plus étroit, il passerait entièrement derrière le texte du
-           logo (cf. correction-2-nav-devis-portrait, correction-liseret-visible-largeur-normale, correction-jaune-toutes-largeurs,
+           rétrécit quasi jamais sous 768px. Le liseret "Anne" (gauche) n'apparaît qu'à partir de 1000px : plus étroit, il chevauche trop le texte du logo
+           (~66px de recouvrement contre ~45px dès 1000px) (cf. correction-2-nav-devis-portrait, correction-liseret-visible-largeur-normale, correction-jaune-toutes-largeurs,
            puis correction-transition-douce-liserets). -->
       <Image
         src={liseretAnne}
@@ -56,9 +56,7 @@ const navClass = 'font-nav text-xs uppercase tracking-[0.08em] text-ink-soft tra
         width={218}
         height={101}
         class="pointer-events-none absolute top-[3%] z-0 hidden h-auto max-w-none
-               min-[850px]:block min-[850px]:w-[50%] min-[850px]:left-[-20%]
-               min-[900px]:w-[65%] min-[900px]:left-[-35%]
-               min-[1000px]:w-[82%] min-[1000px]:left-[-62%]"
+               min-[1000px]:block min-[1000px]:w-[82%] min-[1000px]:left-[-62%]"
       />
       <Image
         src={liseretLeblanc}
